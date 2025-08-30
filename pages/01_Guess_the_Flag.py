@@ -8,12 +8,6 @@ def load_countries():
     with open(data_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-def flag_from_iso(code: str) -> str:
-    # Convert ISO country code to flag emoji
-    code = code.upper()
-    base = 127397  # regional indicator base
-    return "".join(chr(base + ord(c)) for c in code)
-
 def new_round(num_options: int = 4):
     pool = st.session_state.pool
     if not pool:
