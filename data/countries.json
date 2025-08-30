@@ -3,1482 +3,1715 @@
 		"name": "Afghanistan",
 		"code": "AF",
 		"capital": "Kabul",
-		"flag_image": "afghanistan.png"
+		"flag_image": "afghanistan.png",
+		"type": "nation"
 	},
 	{
 		"name": "Aland Islands",
 		"code": "AX",
 		"capital": "Mariehamn",
-		"flag_image": "aland_islands.png"
+		"flag_image": "aland_islands.png",
+		"type": "territory"
 	},
 	{
 		"name": "Albania",
 		"code": "AL",
 		"capital": "Tirana",
-		"flag_image": "albania.png"
+		"flag_image": "albania.png",
+		"type": "nation"
 	},
 	{
 		"name": "Algeria",
 		"code": "DZ",
 		"capital": "Algiers",
-		"flag_image": "algeria.png"
+		"flag_image": "algeria.png",
+		"type": "nation"
 	},
 	{
 		"name": "American Samoa",
 		"code": "AS",
 		"capital": "Pago Pago",
-		"flag_image": "american_samoa.png"
+		"flag_image": "american_samoa.png",
+		"type": "territory"
 	},
 	{
 		"name": "Andorra",
 		"code": "AD",
 		"capital": "Andorra la Vella",
-		"flag_image": "andorra.png"
+		"flag_image": "andorra.png",
+		"type": "nation"
 	},
 	{
 		"name": "Angola",
 		"code": "AO",
 		"capital": "Luanda",
-		"flag_image": "angola.png"
+		"flag_image": "angola.png",
+		"type": "nation"
 	},
 	{
 		"name": "Anguilla",
 		"code": "AI",
 		"capital": "The Valley",
-		"flag_image": "anguilla.png"
+		"flag_image": "anguilla.png",
+		"type": "territory"
 	},
 	{
 		"name": "Antarctica",
 		"code": "AQ",
 		"capital": "",
-		"flag_image": "antarctica.png"
+		"flag_image": "antarctica.png",
+		"type": "territory"
 	},
 	{
 		"name": "Antigua and Barbuda",
 		"code": "AG",
 		"capital": "St. John's",
-		"flag_image": "antigua_and_barbuda.png"
+		"flag_image": "antigua_and_barbuda.png",
+		"type": "nation"
 	},
 	{
 		"name": "Argentina",
 		"code": "AR",
 		"capital": "Buenos Aires",
-		"flag_image": "argentina.png"
+		"flag_image": "argentina.png",
+		"type": "nation"
 	},
 	{
 		"name": "Armenia",
 		"code": "AM",
 		"capital": "Yerevan",
-		"flag_image": "armenia.png"
+		"flag_image": "armenia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Aruba",
 		"code": "AW",
 		"capital": "Oranjestad",
-		"flag_image": "aruba.png"
+		"flag_image": "aruba.png",
+		"type": "territory"
 	},
 	{
 		"name": "Australia",
 		"code": "AU",
 		"capital": "Canberra",
-		"flag_image": "australia.png"
+		"flag_image": "australia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Austria",
 		"code": "AT",
 		"capital": "Vienna",
-		"flag_image": "austria.png"
+		"flag_image": "austria.png",
+		"type": "nation"
 	},
 	{
 		"name": "Azerbaijan",
 		"code": "AZ",
 		"capital": "Baku",
-		"flag_image": "azerbaijan.png"
+		"flag_image": "azerbaijan.png",
+		"type": "nation"
 	},
 	{
 		"name": "Bahamas",
 		"code": "BS",
 		"capital": "Nassau",
-		"flag_image": "bahamas.png"
+		"flag_image": "bahamas.png",
+		"type": "nation"
 	},
 	{
 		"name": "Bahrain",
 		"code": "BH",
 		"capital": "Manama",
-		"flag_image": "bahrain.png"
+		"flag_image": "bahrain.png",
+		"type": "nation"
 	},
 	{
 		"name": "Bangladesh",
 		"code": "BD",
 		"capital": "Dhaka",
-		"flag_image": "bangladesh.png"
+		"flag_image": "bangladesh.png",
+		"type": "nation"
 	},
 	{
 		"name": "Barbados",
 		"code": "BB",
 		"capital": "Bridgetown",
-		"flag_image": "barbados.png"
+		"flag_image": "barbados.png",
+		"type": "nation"
 	},
 	{
 		"name": "Belarus",
 		"code": "BY",
 		"capital": "Minsk",
-		"flag_image": "belarus.png"
+		"flag_image": "belarus.png",
+		"type": "nation"
 	},
 	{
 		"name": "Belgium",
 		"code": "BE",
 		"capital": "Brussels",
-		"flag_image": "belgium.png"
+		"flag_image": "belgium.png",
+		"type": "nation"
 	},
 	{
 		"name": "Belize",
 		"code": "BZ",
 		"capital": "Belmopan",
-		"flag_image": "belize.png"
+		"flag_image": "belize.png",
+		"type": "nation"
 	},
 	{
 		"name": "Benin",
 		"code": "BJ",
 		"capital": "Porto-Novo",
-		"flag_image": "benin.png"
+		"flag_image": "benin.png",
+		"type": "nation"
 	},
 	{
 		"name": "Bermuda",
 		"code": "BM",
 		"capital": "Hamilton",
-		"flag_image": "bermuda.png"
+		"flag_image": "bermuda.png",
+		"type": "territory"
 	},
 	{
 		"name": "Bhutan",
 		"code": "BT",
 		"capital": "Thimphu",
-		"flag_image": "bhutan.png"
+		"flag_image": "bhutan.png",
+		"type": "nation"
 	},
 	{
 		"name": "Bolivia",
 		"code": "BO",
 		"capital": "Sucre",
-		"flag_image": "bolivia.png"
+		"flag_image": "bolivia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Bonaire, Saint Eustatius and Saba ",
 		"code": "BQ",
 		"capital": "",
-		"flag_image": "bonaire_saint_eustatius_and_saba.png"
+		"flag_image": "bonaire.png",
+		"type": "territory"
 	},
 	{
 		"name": "Bosnia and Herzegovina",
 		"code": "BA",
 		"capital": "Sarajevo",
-		"flag_image": "bosnia_and_herzegovina.png"
+		"flag_image": "bosnia_and_herzegovina.png",
+		"type": "nation"
 	},
 	{
 		"name": "Botswana",
 		"code": "BW",
 		"capital": "Gaborone",
-		"flag_image": "botswana.png"
+		"flag_image": "botswana.png",
+		"type": "nation"
 	},
 	{
 		"name": "Brazil",
 		"code": "BR",
 		"capital": "Brasilia",
-		"flag_image": "brazil.png"
+		"flag_image": "brazil.png",
+		"type": "nation"
 	},
 	{
 		"name": "British Indian Ocean Territory",
 		"code": "IO",
 		"capital": "Diego Garcia",
-		"flag_image": "british_indian_ocean.png"
+		"flag_image": "british_indian_ocean.png",
+		"type": "territory"
 	},
 	{
 		"name": "British Virgin Islands",
 		"code": "VG",
 		"capital": "Road Town",
-		"flag_image": "british_virgin_islands.png"
+		"flag_image": "british_virgin_islands.png",
+		"type": "territory"
 	},
 	{
 		"name": "Brunei",
 		"code": "BN",
 		"capital": "Bandar Seri Begawan",
-		"flag_image": "brunei.png"
+		"flag_image": "brunei.png",
+		"type": "nation"
 	},
 	{
 		"name": "Bulgaria",
 		"code": "BG",
 		"capital": "Sofia",
-		"flag_image": "bulgaria.png"
+		"flag_image": "bulgaria.png",
+		"type": "nation"
 	},
 	{
 		"name": "Burkina Faso",
 		"code": "BF",
 		"capital": "Ouagadougou",
-		"flag_image": "burkina_faso.png"
+		"flag_image": "burkina_faso.png",
+		"type": "nation"
 	},
 	{
 		"name": "Burundi",
 		"code": "BI",
 		"capital": "Bujumbura",
-		"flag_image": "burundi.png"
+		"flag_image": "burundi.png",
+		"type": "nation"
 	},
 	{
 		"name": "Cambodia",
 		"code": "KH",
 		"capital": "Phnom Penh",
-		"flag_image": "cambodia.png"
+		"flag_image": "cambodia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Cameroon",
 		"code": "CM",
 		"capital": "Yaounde",
-		"flag_image": "cameroon.png"
+		"flag_image": "cameroon.png",
+		"type": "nation"
 	},
 	{
 		"name": "Canada",
 		"code": "CA",
 		"capital": "Ottawa",
-		"flag_image": "canada.png"
+		"flag_image": "canada.png",
+		"type": "nation"
 	},
 	{
-		"name": "Cape Verde",
+		"name": "Cabo Verde",
 		"code": "CV",
 		"capital": "Praia",
-		"flag_image": "cape_verde.png"
+		"flag_image": "cabo_verde.png",
+		"type": "nation"
 	},
 	{
 		"name": "Cayman Islands",
 		"code": "KY",
 		"capital": "George Town",
-		"flag_image": "cayman_islands.png"
+		"flag_image": "cayman_islands.png",
+		"type": "territory"
 	},
 	{
 		"name": "Central African Republic",
 		"code": "CF",
 		"capital": "Bangui",
-		"flag_image": "central_african_republic.png"
+		"flag_image": "central_african_republic.png",
+		"type": "nation"
 	},
 	{
 		"name": "Chad",
 		"code": "TD",
 		"capital": "N'Djamena",
-		"flag_image": "chad.png"
+		"flag_image": "chad.png",
+		"type": "nation"
 	},
 	{
 		"name": "Chile",
 		"code": "CL",
 		"capital": "Santiago",
-		"flag_image": "chile.png"
+		"flag_image": "chile.png",
+		"type": "nation"
 	},
 	{
 		"name": "China",
 		"code": "CN",
 		"capital": "Beijing",
-		"flag_image": "china.png"
+		"flag_image": "china.png",
+		"type": "nation"
 	},
 	{
 		"name": "Christmas Island",
 		"code": "CX",
 		"capital": "Flying Fish Cove",
-		"flag_image": "christmas_island.png"
+		"flag_image": "christmas_island.png",
+		"type": "territory"
 	},
 	{
 		"name": "Cocos Islands",
 		"code": "CC",
 		"capital": "West Island",
-		"flag_image": "cocos_islands.png"
+		"flag_image": "cocos_islands.png",
+		"type": "territory"
 	},
 	{
 		"name": "Colombia",
 		"code": "CO",
 		"capital": "Bogota",
-		"flag_image": "colombia.png"
+		"flag_image": "colombia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Comoros",
 		"code": "KM",
 		"capital": "Moroni",
-		"flag_image": "comoros.png"
+		"flag_image": "comoros.png",
+		"type": "nation"
 	},
 	{
 		"name": "Cook Islands",
 		"code": "CK",
 		"capital": "Avarua",
-		"flag_image": "cook_islands.png"
+		"flag_image": "cook_islands.png",
+		"type": "territory"
 	},
 	{
 		"name": "Costa Rica",
 		"code": "CR",
 		"capital": "San Jose",
-		"flag_image": "costa_rica.png"
+		"flag_image": "costa_rica.png",
+		"type": "nation"
 	},
 	{
 		"name": "Croatia",
 		"code": "HR",
 		"capital": "Zagreb",
-		"flag_image": "croatia.png"
+		"flag_image": "croatia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Cuba",
 		"code": "CU",
 		"capital": "Havana",
-		"flag_image": "cuba.png"
+		"flag_image": "cuba.png",
+		"type": "nation"
 	},
 	{
 		"name": "Curacao",
 		"code": "CW",
 		"capital": " Willemstad",
-		"flag_image": "curacao.png"
+		"flag_image": "curacao.png",
+		"type": "territory"
 	},
 	{
 		"name": "Cyprus",
 		"code": "CY",
 		"capital": "Nicosia",
-		"flag_image": "cyprus.png"
+		"flag_image": "cyprus.png",
+		"type": "nation"
 	},
 	{
 		"name": "Czech Republic",
 		"code": "CZ",
 		"capital": "Prague",
-		"flag_image": "czech_republic.png"
+		"flag_image": "czech_republic.png",
+		"type": "nation"
 	},
 	{
 		"name": "Democratic Republic of the Congo",
 		"code": "CD",
 		"capital": "Kinshasa",
-		"flag_image": "democratic_republic_of_the_congo.png"
+		"flag_image": "democratic_republic_of_congo.png",
+		"type": "nation"
 	},
 	{
 		"name": "Denmark",
 		"code": "DK",
 		"capital": "Copenhagen",
-		"flag_image": "denmark.png"
+		"flag_image": "denmark.png",
+		"type": "nation"
 	},
 	{
 		"name": "Djibouti",
 		"code": "DJ",
 		"capital": "Djibouti",
-		"flag_image": "djibouti.png"
+		"flag_image": "djibouti.png",
+		"type": "nation"
 	},
 	{
 		"name": "Dominica",
 		"code": "DM",
 		"capital": "Roseau",
-		"flag_image": "dominica.png"
+		"flag_image": "dominica.png",
+		"type": "nation"
 	},
 	{
 		"name": "Dominican Republic",
 		"code": "DO",
 		"capital": "Santo Domingo",
-		"flag_image": "dominican_republic.png"
+		"flag_image": "dominican_republic.png",
+		"type": "nation"
 	},
 	{
-		"name": "East Timor",
+		"name": "Timor Leste",
 		"code": "TL",
 		"capital": "Dili",
-		"flag_image": "east_timor.png"
+		"flag_image": "timor_leste.png",
+		"type": "nation"
 	},
 	{
 		"name": "Ecuador",
 		"code": "EC",
 		"capital": "Quito",
-		"flag_image": "ecuador.png"
+		"flag_image": "ecuador.png",
+		"type": "nation"
 	},
 	{
 		"name": "Egypt",
 		"code": "EG",
 		"capital": "Cairo",
-		"flag_image": "egypt.png"
+		"flag_image": "egypt.png",
+		"type": "nation"
 	},
 	{
 		"name": "El Salvador",
 		"code": "SV",
 		"capital": "San Salvador",
-		"flag_image": "el_salvador.png"
+		"flag_image": "el_salvador.png",
+		"type": "nation"
 	},
 	{
 		"name": "Equatorial Guinea",
 		"code": "GQ",
 		"capital": "Malabo",
-		"flag_image": "equatorial_guinea.png"
+		"flag_image": "equatorial_guinea.png",
+		"type": "nation"
 	},
 	{
 		"name": "Eritrea",
 		"code": "ER",
 		"capital": "Asmara",
-		"flag_image": "eritrea.png"
+		"flag_image": "eritrea.png",
+		"type": "nation"
 	},
 	{
 		"name": "Estonia",
 		"code": "EE",
 		"capital": "Tallinn",
-		"flag_image": "estonia.png"
+		"flag_image": "estonia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Ethiopia",
 		"code": "ET",
 		"capital": "Addis Ababa",
-		"flag_image": "ethiopia.png"
+		"flag_image": "ethiopia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Falkland Islands",
 		"code": "FK",
 		"capital": "Stanley",
-		"flag_image": "falkland_islands.png"
+		"flag_image": "falkland_islands.png",
+		"type": "territory"
 	},
 	{
 		"name": "Faroe Islands",
 		"code": "FO",
 		"capital": "Torshavn",
-		"flag_image": "faroe_islands.png"
+		"flag_image": "faroe_islands.png",
+		"type": "territory"
 	},
 	{
 		"name": "Fiji",
 		"code": "FJ",
 		"capital": "Suva",
-		"flag_image": "fiji.png"
+		"flag_image": "fiji.png",
+		"type": "nation"
 	},
 	{
 		"name": "Finland",
 		"code": "FI",
 		"capital": "Helsinki",
-		"flag_image": "finland.png"
+		"flag_image": "finland.png",
+		"type": "nation"
 	},
 	{
 		"name": "France",
 		"code": "FR",
 		"capital": "Paris",
-		"flag_image": "france.png"
+		"flag_image": "france.png",
+		"type": "nation"
 	},
 	{
 		"name": "French Guiana",
 		"code": "GF",
 		"capital": "Cayenne",
-		"flag_image": "french_guiana.png"
+		"flag_image": "french_guiana.png",
+		"type": "territory"
 	},
 	{
 		"name": "French Polynesia",
 		"code": "PF",
 		"capital": "Papeete",
-		"flag_image": "french_polynesia.png"
+		"flag_image": "french_polynesia.png",
+		"type": "territory"
 	},
 	{
 		"name": "French Southern Territories",
 		"code": "TF",
 		"capital": "Port-aux-Francais",
-		"flag_image": "french_southern_territories.png"
+		"flag_image": "french_southern_territories.png",
+		"type": "territory"
 	},
 	{
 		"name": "Gabon",
 		"code": "GA",
 		"capital": "Libreville",
-		"flag_image": "gabon.png"
+		"flag_image": "gabon.png",
+		"type": "nation"
 	},
 	{
 		"name": "Gambia",
 		"code": "GM",
 		"capital": "Banjul",
-		"flag_image": "gambia.png"
+		"flag_image": "gambia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Georgia",
 		"code": "GE",
 		"capital": "Tbilisi",
-		"flag_image": "georgia.png"
+		"flag_image": "georgia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Germany",
 		"code": "DE",
 		"capital": "Berlin",
-		"flag_image": "germany.png"
+		"flag_image": "germany.png",
+		"type": "nation"
 	},
 	{
 		"name": "Ghana",
 		"code": "GH",
 		"capital": "Accra",
-		"flag_image": "ghana.png"
+		"flag_image": "ghana.png",
+		"type": "nation"
 	},
 	{
 		"name": "Gibraltar",
 		"code": "GI",
 		"capital": "Gibraltar",
-		"flag_image": "gibraltar.png"
+		"flag_image": "gibraltar.png",
+		"type": "territory"
 	},
 	{
 		"name": "Greece",
 		"code": "GR",
 		"capital": "Athens",
-		"flag_image": "greece.png"
+		"flag_image": "greece.png",
+		"type": "nation"
 	},
 	{
 		"name": "Greenland",
 		"code": "GL",
 		"capital": "Nuuk",
-		"flag_image": "greenland.png"
+		"flag_image": "greenland.png",
+		"type": "territory"
 	},
 	{
 		"name": "Grenada",
 		"code": "GD",
 		"capital": "St. George's",
-		"flag_image": "grenada.png"
+		"flag_image": "grenada.png",
+		"type": "nation"
 	},
 	{
 		"name": "Guadeloupe",
 		"code": "GP",
 		"capital": "Basse-Terre",
-		"flag_image": "guadeloupe.png"
+		"flag_image": "guadeloupe.png",
+		"type": "territory"
 	},
 	{
 		"name": "Guam",
 		"code": "GU",
 		"capital": "Hagatna",
-		"flag_image": "guam.png"
+		"flag_image": "guam.png",
+		"type": "territory"
 	},
 	{
 		"name": "Guatemala",
 		"code": "GT",
 		"capital": "Guatemala City",
-		"flag_image": "guatemala.png"
+		"flag_image": "guatemala.png",
+		"type": "nation"
 	},
 	{
 		"name": "Guernsey",
 		"code": "GG",
 		"capital": "St Peter Port",
-		"flag_image": "guernsey.png"
+		"flag_image": "guernsey.png",
+		"type": "territory"
 	},
 	{
 		"name": "Guinea",
 		"code": "GN",
 		"capital": "Conakry",
-		"flag_image": "guinea.png"
+		"flag_image": "guinea.png",
+		"type": "nation"
 	},
 	{
 		"name": "Guinea-Bissau",
 		"code": "GW",
 		"capital": "Bissau",
-		"flag_image": "guineabissau.png"
+		"flag_image": "guineabissau.png",
+		"type": "nation"
 	},
 	{
 		"name": "Guyana",
 		"code": "GY",
 		"capital": "Georgetown",
-		"flag_image": "guyana.png"
+		"flag_image": "guyana.png",
+		"type": "nation"
 	},
 	{
 		"name": "Haiti",
 		"code": "HT",
 		"capital": "Port-au-Prince",
-		"flag_image": "haiti.png"
+		"flag_image": "haiti.png",
+		"type": "nation"
 	},
 	{
 		"name": "Honduras",
 		"code": "HN",
 		"capital": "Tegucigalpa",
-		"flag_image": "honduras.png"
+		"flag_image": "honduras.png",
+		"type": "nation"
 	},
 	{
 		"name": "Hong Kong",
 		"code": "HK",
 		"capital": "Hong Kong",
-		"flag_image": "hong_kong.png"
+		"flag_image": "hong_kong.png",
+		"type": "territory"
 	},
 	{
 		"name": "Hungary",
 		"code": "HU",
 		"capital": "Budapest",
-		"flag_image": "hungary.png"
+		"flag_image": "hungary.png",
+		"type": "nation"
 	},
 	{
 		"name": "Iceland",
 		"code": "IS",
 		"capital": "Reykjavik",
-		"flag_image": "iceland.png"
+		"flag_image": "iceland.png",
+		"type": "nation"
 	},
 	{
 		"name": "India",
 		"code": "IN",
 		"capital": "New Delhi",
-		"flag_image": "india.png"
+		"flag_image": "india.png",
+		"type": "nation"
 	},
 	{
 		"name": "Indonesia",
 		"code": "ID",
 		"capital": "Jakarta",
-		"flag_image": "indonesia.png"
+		"flag_image": "indonesia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Iran",
 		"code": "IR",
 		"capital": "Tehran",
-		"flag_image": "iran.png"
+		"flag_image": "iran.png",
+		"type": "nation"
 	},
 	{
 		"name": "Iraq",
 		"code": "IQ",
 		"capital": "Baghdad",
-		"flag_image": "iraq.png"
+		"flag_image": "iraq.png",
+		"type": "nation"
 	},
 	{
 		"name": "Ireland",
 		"code": "IE",
 		"capital": "Dublin",
-		"flag_image": "ireland.png"
+		"flag_image": "ireland.png",
+		"type": "nation"
 	},
 	{
 		"name": "Isle of Man",
 		"code": "IM",
 		"capital": "Douglas, Isle of Man",
-		"flag_image": "isle_of_man.png"
+		"flag_image": "isle_of_man.png",
+		"type": "territory"
 	},
 	{
 		"name": "Israel",
 		"code": "IL",
 		"capital": "Jerusalem",
-		"flag_image": "israel.png"
+		"flag_image": "israel.png",
+		"type": "nation"
 	},
 	{
 		"name": "Italy",
 		"code": "IT",
 		"capital": "Rome",
-		"flag_image": "italy.png"
+		"flag_image": "italy.png",
+		"type": "nation"
 	},
 	{
-		"name": "Ivory Coast",
+		"name": "Cote D'Ivoire",
 		"code": "CI",
 		"capital": "Yamoussoukro",
-		"flag_image": "ivory_coast.png"
+		"flag_image": "cote_divoire.png",
+		"type": "nation"
 	},
 	{
 		"name": "Jamaica",
 		"code": "JM",
 		"capital": "Kingston",
-		"flag_image": "jamaica.png"
+		"flag_image": "jamaica.png",
+		"type": "nation"
 	},
 	{
 		"name": "Japan",
 		"code": "JP",
 		"capital": "Tokyo",
-		"flag_image": "japan.png"
+		"flag_image": "japan.png",
+		"type": "nation"
 	},
 	{
 		"name": "Jersey",
 		"code": "JE",
 		"capital": "Saint Helier",
-		"flag_image": "jersey.png"
+		"flag_image": "jersey.png",
+		"type": "territory"
 	},
 	{
 		"name": "Jordan",
 		"code": "JO",
 		"capital": "Amman",
-		"flag_image": "jordan.png"
+		"flag_image": "jordan.png",
+		"type": "nation"
 	},
 	{
 		"name": "Kazakhstan",
 		"code": "KZ",
 		"capital": "Astana",
-		"flag_image": "kazakhstan.png"
+		"flag_image": "kazakhstan.png",
+		"type": "nation"
 	},
 	{
 		"name": "Kenya",
 		"code": "KE",
 		"capital": "Nairobi",
-		"flag_image": "kenya.png"
+		"flag_image": "kenya.png",
+		"type": "nation"
 	},
 	{
 		"name": "Kiribati",
 		"code": "KI",
 		"capital": "Tarawa",
-		"flag_image": "kiribati.png"
+		"flag_image": "kiribati.png",
+		"type": "nation"
 	},
 	{
 		"name": "Kosovo",
 		"code": "XK",
 		"capital": "Pristina",
-		"flag_image": "kosovo.png"
+		"flag_image": "kosovo.png",
+		"type": "nation"
 	},
 	{
 		"name": "Kuwait",
 		"code": "KW",
 		"capital": "Kuwait City",
-		"flag_image": "kuwait.png"
+		"flag_image": "kuwait.png",
+		"type": "nation"
 	},
 	{
 		"name": "Kyrgyzstan",
 		"code": "KG",
 		"capital": "Bishkek",
-		"flag_image": "kyrgyzstan.png"
+		"flag_image": "kyrgyzstan.png",
+		"type": "nation"
 	},
 	{
 		"name": "Laos",
 		"code": "LA",
 		"capital": "Vientiane",
-		"flag_image": "laos.png"
+		"flag_image": "laos.png",
+		"type": "nation"
 	},
 	{
 		"name": "Latvia",
 		"code": "LV",
 		"capital": "Riga",
-		"flag_image": "latvia.png"
+		"flag_image": "latvia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Lebanon",
 		"code": "LB",
 		"capital": "Beirut",
-		"flag_image": "lebanon.png"
+		"flag_image": "lebanon.png",
+		"type": "nation"
 	},
 	{
 		"name": "Lesotho",
 		"code": "LS",
 		"capital": "Maseru",
-		"flag_image": "lesotho.png"
+		"flag_image": "lesotho.png",
+		"type": "nation"
 	},
 	{
 		"name": "Liberia",
 		"code": "LR",
 		"capital": "Monrovia",
-		"flag_image": "liberia.png"
+		"flag_image": "liberia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Libya",
 		"code": "LY",
 		"capital": "Tripolis",
-		"flag_image": "libya.png"
+		"flag_image": "libya.png",
+		"type": "nation"
 	},
 	{
 		"name": "Liechtenstein",
 		"code": "LI",
 		"capital": "Vaduz",
-		"flag_image": "liechtenstein.png"
+		"flag_image": "liechtenstein.png",
+		"type": "nation"
 	},
 	{
 		"name": "Lithuania",
 		"code": "LT",
 		"capital": "Vilnius",
-		"flag_image": "lithuania.png"
+		"flag_image": "lithuania.png",
+		"type": "nation"
 	},
 	{
 		"name": "Luxembourg",
 		"code": "LU",
 		"capital": "Luxembourg",
-		"flag_image": "luxembourg.png"
+		"flag_image": "luxembourg.png",
+		"type": "nation"
 	},
 	{
-		"name": "Macao",
+		"name": "Macau",
 		"code": "MO",
-		"capital": "Macao",
-		"flag_image": "macao.png"
+		"capital": "Macau",
+		"flag_image": "macau.png",
+		"type": "territory"
 	},
 	{
-		"name": "Macedonia",
+		"name": "North Macedonia",
 		"code": "MK",
 		"capital": "Skopje",
-		"flag_image": "macedonia.png"
+		"flag_image": "north_macedonia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Madagascar",
 		"code": "MG",
 		"capital": "Antananarivo",
-		"flag_image": "madagascar.png"
+		"flag_image": "madagascar.png",
+		"type": "nation"
 	},
 	{
 		"name": "Malawi",
 		"code": "MW",
 		"capital": "Lilongwe",
-		"flag_image": "malawi.png"
+		"flag_image": "malawi.png",
+		"type": "nation"
 	},
 	{
 		"name": "Malaysia",
 		"code": "MY",
 		"capital": "Kuala Lumpur",
-		"flag_image": "malaysia.png"
+		"flag_image": "malaysia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Maldives",
 		"code": "MV",
 		"capital": "Male",
-		"flag_image": "maldives.png"
+		"flag_image": "maldives.png",
+		"type": "nation"
 	},
 	{
 		"name": "Mali",
 		"code": "ML",
 		"capital": "Bamako",
-		"flag_image": "mali.png"
+		"flag_image": "mali.png",
+		"type": "nation"
 	},
 	{
 		"name": "Malta",
 		"code": "MT",
 		"capital": "Valletta",
-		"flag_image": "malta.png"
+		"flag_image": "malta.png",
+		"type": "nation"
 	},
 	{
 		"name": "Marshall Islands",
 		"code": "MH",
 		"capital": "Majuro",
-		"flag_image": "marshall_islands.png"
+		"flag_image": "marshall_islands.png",
+		"type": "nation"
 	},
 	{
 		"name": "Martinique",
 		"code": "MQ",
 		"capital": "Fort-de-France",
-		"flag_image": "martinique.png"
+		"flag_image": "martinique.png",
+		"type": "territory"
 	},
 	{
 		"name": "Mauritania",
 		"code": "MR",
 		"capital": "Nouakchott",
-		"flag_image": "mauritania.png"
+		"flag_image": "mauritania.png",
+		"type": "nation"
 	},
 	{
 		"name": "Mauritius",
 		"code": "MU",
 		"capital": "Port Louis",
-		"flag_image": "mauritius.png"
+		"flag_image": "mauritius.png",
+		"type": "nation"
 	},
 	{
 		"name": "Mayotte",
 		"code": "YT",
 		"capital": "Mamoudzou",
-		"flag_image": "mayotte.png"
+		"flag_image": "mayotte.png",
+		"type": "territory"
 	},
 	{
 		"name": "Mexico",
 		"code": "MX",
 		"capital": "Mexico City",
-		"flag_image": "mexico.png"
+		"flag_image": "mexico.png",
+		"type": "nation"
 	},
 	{
 		"name": "Micronesia",
 		"code": "FM",
 		"capital": "Palikir",
-		"flag_image": "micronesia.png"
+		"flag_image": "micronesia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Moldova",
 		"code": "MD",
 		"capital": "Chisinau",
-		"flag_image": "moldova.png"
+		"flag_image": "moldova.png",
+		"type": "nation"
 	},
 	{
 		"name": "Monaco",
 		"code": "MC",
 		"capital": "Monaco",
-		"flag_image": "monaco.png"
+		"flag_image": "monaco.png",
+		"type": "nation"
 	},
 	{
 		"name": "Mongolia",
 		"code": "MN",
-		"capital": "Ulan Bator",
-		"flag_image": "mongolia.png"
+		"capital": "Ulaanbaatar",
+		"flag_image": "mongolia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Montenegro",
 		"code": "ME",
 		"capital": "Podgorica",
-		"flag_image": "montenegro.png"
+		"flag_image": "montenegro.png",
+		"type": "nation"
 	},
 	{
 		"name": "Montserrat",
 		"code": "MS",
 		"capital": "Plymouth",
-		"flag_image": "montserrat.png"
+		"flag_image": "montserrat.png",
+		"type": "territory"
 	},
 	{
 		"name": "Morocco",
 		"code": "MA",
 		"capital": "Rabat",
-		"flag_image": "morocco.png"
+		"flag_image": "morocco.png",
+		"type": "nation"
 	},
 	{
 		"name": "Mozambique",
 		"code": "MZ",
 		"capital": "Maputo",
-		"flag_image": "mozambique.png"
+		"flag_image": "mozambique.png",
+		"type": "nation"
 	},
 	{
 		"name": "Myanmar",
 		"code": "MM",
 		"capital": "Nay Pyi Taw",
-		"flag_image": "myanmar.png"
+		"flag_image": "myanmar.png",
+		"type": "nation"
 	},
 	{
 		"name": "Namibia",
 		"code": "NA",
 		"capital": "Windhoek",
-		"flag_image": "namibia.png"
+		"flag_image": "namibia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Nauru",
 		"code": "NR",
 		"capital": "Yaren",
-		"flag_image": "nauru.png"
+		"flag_image": "nauru.png",
+		"type": "nation"
 	},
 	{
 		"name": "Nepal",
 		"code": "NP",
 		"capital": "Kathmandu",
-		"flag_image": "nepal.png"
+		"flag_image": "nepal.png",
+		"type": "nation"
 	},
 	{
 		"name": "Netherlands",
 		"code": "NL",
 		"capital": "Amsterdam",
-		"flag_image": "netherlands.png"
+		"flag_image": "netherlands.png",
+		"type": "nation"
 	},
 	{
 		"name": "New Caledonia",
 		"code": "NC",
 		"capital": "Noumea",
-		"flag_image": "new_caledonia.png"
+		"flag_image": "new_caledonia.png",
+		"type": "territory"
 	},
 	{
 		"name": "New Zealand",
 		"code": "NZ",
 		"capital": "Wellington",
-		"flag_image": "new_zealand.png"
+		"flag_image": "new_zealand.png",
+		"type": "nation"
 	},
 	{
 		"name": "Nicaragua",
 		"code": "NI",
 		"capital": "Managua",
-		"flag_image": "nicaragua.png"
+		"flag_image": "nicaragua.png",
+		"type": "nation"
 	},
 	{
 		"name": "Niger",
 		"code": "NE",
 		"capital": "Niamey",
-		"flag_image": "niger.png"
+		"flag_image": "niger.png",
+		"type": "nation"
 	},
 	{
 		"name": "Nigeria",
 		"code": "NG",
 		"capital": "Abuja",
-		"flag_image": "nigeria.png"
+		"flag_image": "nigeria.png",
+		"type": "nation"
 	},
 	{
 		"name": "Niue",
 		"code": "NU",
 		"capital": "Alofi",
-		"flag_image": "niue.png"
+		"flag_image": "niue.png",
+		"type": "territory"
 	},
 	{
 		"name": "Norfolk Island",
 		"code": "NF",
 		"capital": "Kingston",
-		"flag_image": "norfolk_island.png"
+		"flag_image": "norfolk_island.png",
+		"type": "territory"
 	},
 	{
 		"name": "North Korea",
 		"code": "KP",
 		"capital": "Pyongyang",
-		"flag_image": "north_korea.png"
+		"flag_image": "north_korea.png",
+		"type": "nation"
 	},
 	{
 		"name": "Northern Mariana Islands",
 		"code": "MP",
 		"capital": "Saipan",
-		"flag_image": "northern_mariana_islands.png"
+		"flag_image": "north_mariana_islands.png",
+		"type": "territory"
 	},
 	{
 		"name": "Norway",
 		"code": "NO",
 		"capital": "Oslo",
-		"flag_image": "norway.png"
+		"flag_image": "norway.png",
+		"type": "nation"
 	},
 	{
 		"name": "Oman",
 		"code": "OM",
 		"capital": "Muscat",
-		"flag_image": "oman.png"
+		"flag_image": "oman.png",
+		"type": "nation"
 	},
 	{
 		"name": "Pakistan",
 		"code": "PK",
 		"capital": "Islamabad",
-		"flag_image": "pakistan.png"
+		"flag_image": "pakistan.png",
+		"type": "nation"
 	},
 	{
 		"name": "Palau",
 		"code": "PW",
 		"capital": "Melekeok",
-		"flag_image": "palau.png"
+		"flag_image": "palau.png",
+		"type": "nation"
 	},
 	{
-		"name": "Palestinian Territory",
+		"name": "Palestine",
 		"code": "PS",
-		"capital": "East Jerusalem",
-		"flag_image": "palestinian_territory.png"
+		"capital": "Ramallah",
+		"flag_image": "palestinian_territory.png",
+		"type": "nation"
 	},
 	{
 		"name": "Panama",
 		"code": "PA",
 		"capital": "Panama City",
-		"flag_image": "panama.png"
+		"flag_image": "panama.png",
+		"type": "nation"
 	},
 	{
 		"name": "Papua New Guinea",
 		"code": "PG",
 		"capital": "Port Moresby",
-		"flag_image": "papua_new_guinea.png"
+		"flag_image": "papua_new_guinea.png",
+		"type": "nation"
 	},
 	{
 		"name": "Paraguay",
 		"code": "PY",
 		"capital": "Asuncion",
-		"flag_image": "paraguay.png"
+		"flag_image": "paraguay.png",
+		"type": "nation"
 	},
 	{
 		"name": "Peru",
 		"code": "PE",
 		"capital": "Lima",
-		"flag_image": "peru.png"
+		"flag_image": "peru.png",
+		"type": "nation"
 	},
 	{
 		"name": "Philippines",
 		"code": "PH",
 		"capital": "Manila",
-		"flag_image": "philippines.png"
+		"flag_image": "philippines.png",
+		"type": "nation"
 	},
 	{
-		"name": "Pitcairn",
+		"name": "Pitcairn Islands",
 		"code": "PN",
 		"capital": "Adamstown",
-		"flag_image": "pitcairn.png"
+		"flag_image": "pitcairn_islands.png",
+		"type": "nation"
 	},
 	{
 		"name": "Poland",
 		"code": "PL",
 		"capital": "Warsaw",
-		"flag_image": "poland.png"
+		"flag_image": "poland.png",
+		"type": "nation"
 	},
 	{
 		"name": "Portugal",
 		"code": "PT",
 		"capital": "Lisbon",
-		"flag_image": "portugal.png"
+		"flag_image": "portugal.png",
+		"type": "nation"
 	},
 	{
 		"name": "Puerto Rico",
 		"code": "PR",
 		"capital": "San Juan",
-		"flag_image": "puerto_rico.png"
+		"flag_image": "puerto_rico.png",
+		"type": "territory"
 	},
 	{
 		"name": "Qatar",
 		"code": "QA",
 		"capital": "Doha",
-		"flag_image": "qatar.png"
+		"flag_image": "qatar.png",
+		"type": "nation"
 	},
 	{
 		"name": "Republic of the Congo",
 		"code": "CG",
 		"capital": "Brazzaville",
-		"flag_image": "republic_of_congo.png"
+		"flag_image": "republic_of_congo.png",
+		"type": "nation"
 	},
 	{
 		"name": "Reunion",
 		"code": "RE",
 		"capital": "Saint-Denis",
-		"flag_image": "reunion.png"
+		"flag_image": "reunion.png",
+		"type": "territory"
 	},
 	{
 		"name": "Romania",
 		"code": "RO",
 		"capital": "Bucharest",
-		"flag_image": "romania.png"
+		"flag_image": "romania.png",
+		"type": "nation"
 	},
 	{
 		"name": "Russia",
 		"code": "RU",
 		"capital": "Moscow",
-		"flag_image": "russia.png"
+		"flag_image": "russia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Rwanda",
 		"code": "RW",
 		"capital": "Kigali",
-		"flag_image": "rwanda.png"
+		"flag_image": "rwanda.png",
+		"type": "nation"
 	},
 	{
 		"name": "Saint Barthelemy",
 		"code": "BL",
 		"capital": "Gustavia",
-		"flag_image": "saint_barthelemy.png"
+		"flag_image": "st_barthelemy.png",
+		"type": "territory"
 	},
 	{
 		"name": "Saint Helena",
 		"code": "SH",
 		"capital": "Jamestown",
-		"flag_image": "saint_helena.png"
+		"flag_image": "st_helena.png",
+		"type": "territory"
 	},
 	{
 		"name": "Saint Kitts and Nevis",
 		"code": "KN",
 		"capital": "Basseterre",
-		"flag_image": "st_kitts_and_nevis.png"
+		"flag_image": "st_kitts_and_nevis.png",
+		"type": "nation"
 	},
 	{
 		"name": "Saint Lucia",
 		"code": "LC",
 		"capital": "Castries",
-		"flag_image": "saint_lucia.png"
+		"flag_image": "st_lucia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Saint Pierre and Miquelon",
 		"code": "PM",
 		"capital": "Saint-Pierre",
-		"flag_image": "saint_pierre_and_miquelon.png"
+		"flag_image": "saint_pierre_and_miquelon.png",
+		"type": "territory"
 	},
 	{
 		"name": "Saint Vincent and the Grenadines",
 		"code": "VC",
 		"capital": "Kingstown",
-		"flag_image": "st_vincent_and_the_grenadines.png"
+		"flag_image": "st_vincent_and_the_grenadines.png",
+		"type": "nation"
 	},
 	{
 		"name": "Samoa",
 		"code": "WS",
 		"capital": "Apia",
-		"flag_image": "samoa.png"
+		"flag_image": "samoa.png",
+		"type": "nation"
 	},
 	{
 		"name": "San Marino",
 		"code": "SM",
 		"capital": "San Marino",
-		"flag_image": "san_marino.png"
+		"flag_image": "san_marino.png",
+		"type": "nation"
 	},
 	{
 		"name": "Sao Tome and Principe",
 		"code": "ST",
 		"capital": "Sao Tome",
-		"flag_image": "sao_tome_and_principe.png"
+		"flag_image": "sao_tome_and_principe.png",
+		"type": "nation"
 	},
 	{
 		"name": "Saudi Arabia",
 		"code": "SA",
 		"capital": "Riyadh",
-		"flag_image": "saudi_arabia.png"
+		"flag_image": "saudi_arabia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Senegal",
 		"code": "SN",
 		"capital": "Dakar",
-		"flag_image": "senegal.png"
+		"flag_image": "senegal.png",
+		"type": "nation"
 	},
 	{
 		"name": "Serbia",
 		"code": "RS",
 		"capital": "Belgrade",
-		"flag_image": "serbia.png"
+		"flag_image": "serbia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Seychelles",
 		"code": "SC",
 		"capital": "Victoria",
-		"flag_image": "seychelles.png"
+		"flag_image": "seychelles.png",
+		"type": "nation"
 	},
 	{
 		"name": "Sierra Leone",
 		"code": "SL",
 		"capital": "Freetown",
-		"flag_image": "sierra_leone.png"
+		"flag_image": "sierra_leone.png",
+		"type": "nation"
 	},
 	{
 		"name": "Singapore",
 		"code": "SG",
 		"capital": "Singapur",
-		"flag_image": "singapore.png"
+		"flag_image": "singapore.png",
+		"type": "nation"
 	},
 	{
 		"name": "Sint Maarten",
 		"code": "SX",
 		"capital": "Philipsburg",
-		"flag_image": "sint_maarten.png"
+		"flag_image": "sint_maarten.png",
+		"type": "territory"
 	},
 	{
 		"name": "Slovakia",
 		"code": "SK",
 		"capital": "Bratislava",
-		"flag_image": "slovakia.png"
+		"flag_image": "slovakia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Slovenia",
 		"code": "SI",
 		"capital": "Ljubljana",
-		"flag_image": "slovenia.png"
+		"flag_image": "slovenia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Solomon Islands",
 		"code": "SB",
 		"capital": "Honiara",
-		"flag_image": "solomon_islands.png"
+		"flag_image": "solomon_islands.png",
+		"type": "nation"
 	},
 	{
 		"name": "Somalia",
 		"code": "SO",
 		"capital": "Mogadishu",
-		"flag_image": "somalia.png"
+		"flag_image": "somalia.png",
+		"type": "nation"
 	},
 	{
 		"name": "South Africa",
 		"code": "ZA",
 		"capital": "Pretoria",
-		"flag_image": "south_africa.png"
+		"flag_image": "south_africa.png",
+		"type": "nation"
 	},
 	{
 		"name": "South Georgia and the South Sandwich Islands",
 		"code": "GS",
 		"capital": "Grytviken",
-		"flag_image": "south_georgia_and_the_south_sandwich_islands.png"
+		"flag_image": "south_georgia.png",
+		"type": "territory"
 	},
 	{
 		"name": "South Korea",
 		"code": "KR",
 		"capital": "Seoul",
-		"flag_image": "south_korea.png"
+		"flag_image": "south_korea.png",
+		"type": "nation"
 	},
 	{
 		"name": "South Sudan",
 		"code": "SS",
 		"capital": "Juba",
-		"flag_image": "south_sudan.png"
+		"flag_image": "south_sudan.png",
+		"type": "nation"
 	},
 	{
 		"name": "Spain",
 		"code": "ES",
 		"capital": "Madrid",
-		"flag_image": "spain.png"
+		"flag_image": "spain.png",
+		"type": "nation"
 	},
 	{
 		"name": "Sri Lanka",
 		"code": "LK",
 		"capital": "Colombo",
-		"flag_image": "sri_lanka.png"
+		"flag_image": "sri_lanka.png",
+		"type": "nation"
 	},
 	{
 		"name": "Sudan",
 		"code": "SD",
 		"capital": "Khartoum",
-		"flag_image": "sudan.png"
+		"flag_image": "sudan.png",
+		"type": "nation"
 	},
 	{
 		"name": "Suriname",
 		"code": "SR",
 		"capital": "Paramaribo",
-		"flag_image": "suriname.png"
+		"flag_image": "suriname.png",
+		"type": "nation"
 	},
 	{
-		"name": "Svalbard and Jan Mayen",
-		"code": "SJ",
-		"capital": "Longyearbyen",
-		"flag_image": "svalbard_and_jan_mayen.png"
-	},
-	{
-		"name": "Swaziland",
+		"name": "Eswatini",
 		"code": "SZ",
 		"capital": "Mbabane",
-		"flag_image": "swaziland.png"
+		"flag_image": "eswatini.png",
+		"type": "nation"
 	},
 	{
 		"name": "Sweden",
 		"code": "SE",
 		"capital": "Stockholm",
-		"flag_image": "sweden.png"
+		"flag_image": "sweden.png",
+		"type": "nation"
 	},
 	{
 		"name": "Switzerland",
 		"code": "CH",
-		"capital": "Berne",
-		"flag_image": "switzerland.png"
+		"capital": "Bern",
+		"flag_image": "switzerland.png",
+		"type": "nation"
 	},
 	{
 		"name": "Syria",
 		"code": "SY",
 		"capital": "Damascus",
-		"flag_image": "syria.png"
+		"flag_image": "syria.png",
+		"type": "nation"
 	},
 	{
 		"name": "Taiwan",
 		"code": "TW",
 		"capital": "Taipei",
-		"flag_image": "taiwan.png"
+		"flag_image": "taiwan.png",
+		"type": "nation"
 	},
 	{
 		"name": "Tajikistan",
 		"code": "TJ",
 		"capital": "Dushanbe",
-		"flag_image": "tajikistan.png"
+		"flag_image": "tajikistan.png",
+		"type": "nation"
 	},
 	{
 		"name": "Tanzania",
 		"code": "TZ",
 		"capital": "Dodoma",
-		"flag_image": "tanzania.png"
+		"flag_image": "tanzania.png",
+		"type": "nation"
 	},
 	{
 		"name": "Thailand",
 		"code": "TH",
 		"capital": "Bangkok",
-		"flag_image": "thailand.png"
+		"flag_image": "thailand.png",
+		"type": "nation"
 	},
 	{
 		"name": "Togo",
 		"code": "TG",
 		"capital": "Lome",
-		"flag_image": "togo.png"
+		"flag_image": "togo.png",
+		"type": "nation"
 	},
 	{
 		"name": "Tokelau",
 		"code": "TK",
 		"capital": "",
-		"flag_image": "tokelau.png"
+		"flag_image": "tokelau.png",
+		"type": "territory"
 	},
 	{
 		"name": "Tonga",
 		"code": "TO",
 		"capital": "Nuku'alofa",
-		"flag_image": "tonga.png"
+		"flag_image": "tonga.png",
+		"type": "nation"
 	},
 	{
 		"name": "Trinidad and Tobago",
 		"code": "TT",
 		"capital": "Port of Spain",
-		"flag_image": "trinidad_and_tobago.png"
+		"flag_image": "trinidad_and_tobago.png",
+		"type": "nation"
 	},
 	{
 		"name": "Tunisia",
 		"code": "TN",
 		"capital": "Tunis",
-		"flag_image": "tunisia.png"
+		"flag_image": "tunisia.png",
+		"type": "nation"
 	},
 	{
-		"name": "Turkey",
+		"name": "Turkiye",
 		"code": "TR",
 		"capital": "Ankara",
-		"flag_image": "turkey.png"
+		"flag_image": "turkey.png",
+		"type": "nation"
 	},
 	{
 		"name": "Turkmenistan",
 		"code": "TM",
 		"capital": "Ashgabat",
-		"flag_image": "turkmenistan.png"
+		"flag_image": "turkmenistan.png",
+		"type": "nation"
 	},
 	{
 		"name": "Turks and Caicos Islands",
 		"code": "TC",
 		"capital": "Cockburn Town",
-		"flag_image": "turks_and_caicos.png"
+		"flag_image": "turks_and_caicos.png",
+		"type": "territory"
 	},
 	{
 		"name": "Tuvalu",
 		"code": "TV",
 		"capital": "Funafuti",
-		"flag_image": "tuvalu.png"
+		"flag_image": "tuvalu.png",
+		"type": "nation"
 	},
 	{
 		"name": "U.S. Virgin Islands",
 		"code": "VI",
 		"capital": "Charlotte Amalie",
-		"flag_image": "us_virgin_islands.png"
+		"flag_image": "us_virgin_islands.png",
+		"type": "territory"
 	},
 	{
 		"name": "Uganda",
 		"code": "UG",
 		"capital": "Kampala",
-		"flag_image": "uganda.png"
+		"flag_image": "uganda.png",
+		"type": "nation"
 	},
 	{
 		"name": "Ukraine",
 		"code": "UA",
 		"capital": "Kiev",
-		"flag_image": "ukraine.png"
+		"flag_image": "ukraine.png",
+		"type": "nation"
 	},
 	{
 		"name": "United Arab Emirates",
 		"code": "AE",
 		"capital": "Abu Dhabi",
-		"flag_image": "united_arab_emirates.png"
+		"flag_image": "united_arab_emirates.png",
+		"type": "nation"
 	},
 	{
 		"name": "United Kingdom",
 		"code": "GB",
 		"capital": "London",
-		"flag_image": "united_kingdom.png"
+		"flag_image": "united_kingdom.png",
+		"type": "nation"
 	},
 	{
-		"name": "United States",
+		"name": "United States of America",
 		"code": "US",
 		"capital": "Washington",
-		"flag_image": "united_states.png"
-	},
-	{
-		"name": "United States Minor Outlying Islands",
-		"code": "UM",
-		"capital": "",
-		"flag_image": "united_states_minor_outlying_islands.png"
+		"flag_image": "united_states_of_america.png",
+		"type": "nation"
 	},
 	{
 		"name": "Uruguay",
 		"code": "UY",
 		"capital": "Montevideo",
-		"flag_image": "uruguay.png"
+		"flag_image": "uruguay.png",
+		"type": "nation"
 	},
 	{
 		"name": "Uzbekistan",
 		"code": "UZ",
 		"capital": "Tashkent",
-		"flag_image": "uzbekistan.png"
+		"flag_image": "uzbekistan.png",
+		"type": "nation"
 	},
 	{
 		"name": "Vanuatu",
 		"code": "VU",
 		"capital": "Port Vila",
-		"flag_image": "vanuatu.png"
+		"flag_image": "vanuatu.png",
+		"type": "nation"
 	},
 	{
-		"name": "Vatican",
+		"name": "Vatican City",
 		"code": "VA",
 		"capital": "Vatican City",
-		"flag_image": "vatican.png"
+		"flag_image": "vatican_city.png",
+		"type": "nation"
 	},
 	{
 		"name": "Venezuela",
 		"code": "VE",
 		"capital": "Caracas",
-		"flag_image": "venezuela.png"
+		"flag_image": "venezuela.png",
+		"type": "nation"
 	},
 	{
 		"name": "Vietnam",
 		"code": "VN",
 		"capital": "Hanoi",
-		"flag_image": "vietnam.png"
+		"flag_image": "vietnam.png",
+		"type": "nation"
 	},
 	{
 		"name": "Wallis and Futuna",
 		"code": "WF",
 		"capital": "Mata Utu",
-		"flag_image": "wallis_and_futuna.png"
+		"flag_image": "wallis_and_futuna.png",
+		"type": "territory"
 	},
 	{
 		"name": "Western Sahara",
 		"code": "EH",
 		"capital": "El-Aaiun",
-		"flag_image": "western_sahara.png"
+		"flag_image": "western_sahara.png",
+		"type": "territory"
 	},
 	{
 		"name": "Yemen",
 		"code": "YE",
 		"capital": "Sanaa",
-		"flag_image": "yemen.png"
+		"flag_image": "yemen.png",
+		"type": "nation"
 	},
 	{
 		"name": "Zambia",
 		"code": "ZM",
 		"capital": "Lusaka",
-		"flag_image": "zambia.png"
+		"flag_image": "zambia.png",
+		"type": "nation"
 	},
 	{
 		"name": "Zimbabwe",
 		"code": "ZW",
 		"capital": "Harare",
-		"flag_image": "zimbabwe.png"
+		"flag_image": "zimbabwe.png",
+		"type": "nation"
 	}
 ]
