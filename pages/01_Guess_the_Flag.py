@@ -16,18 +16,28 @@ def flag_from_iso(code: str) -> str:
 
 def new_round(num_options: int = 4):
     pool = st.session_state.pool
+    if not pool:
+        st.warning("No more countries left!")
+        st.stop()
+
+    # pick the answer
     answer = random.choice(pool)
-    # pick unique distractors
-    pool = [c for c in pool if c["code"] != answer["code"]]
-    distractors = random.sample(pool, k=min(num_options - 1, len(pool)))
+
+    # remove the answer from the pool so it won't appear again
+    st.session_state.pool = [c for c in pool if c["code"] != answer["code"]]
+
+    # pick unique distractors from the remaining pool
+    distractors = random.sample(st.session_state.pool, k=min(num_options - 1, len(st.session_state.pool)))
     options = distractors + [answer]
     random.shuffle(options)
+
+    # store current question
     st.session_state.current = {
         "answer": answer,
         "options": options,
-        "submitted": False,
         "selected": None,
     }
+
 
 # --- App ---
 st.title("🚩 Guess the Flag")
@@ -64,6 +74,7 @@ else:
         new_round(st.session_state.num_options)
 
     current = st.session_state.current
+    current["submitted"] = False
     answer = current["answer"]
 
     st.metric("Score", f"{st.session_state.score} / {st.session_state.rounds} - {round(st.session_state.score/st.session_state.rounds * 100) if st.session_state.rounds > 0 else 0}%")
@@ -76,7 +87,7 @@ else:
     else:
         st.warning(f"Flag image not found: {answer['flag_image']}")
 
-    options = [c["name"] for c in current["options"]]
+    options = sorted([c["name"] for c in current["options"]])
     choice = st.radio("Which country's flag is this?", options, index=None)
 
     cols = st.columns(2)
