@@ -1,6 +1,7 @@
 
 import streamlit as st
 import json, random, pathlib
+import time
 
 @st.cache_data
 def load_countries():
@@ -55,19 +56,21 @@ with st.sidebar:
 current = st.session_state.current
 answer = current["answer"]
 
-st.metric("Score", f"{st.session_state.score} / {st.session_state.rounds}")
+st.metric("Score", f"{st.session_state.score} / {st.session_state.rounds} - {round(st.session_state.score/st.session_state.rounds * 100) if st.session_state.rounds > 0 else 0}%")
 
-st.markdown(
-    f"<div style='font-size: 8rem; line-height: 1;'>{flag_from_iso(answer['code'])}</div>",
-    unsafe_allow_html=True,
-)
+flag_dir = pathlib.Path(__file__).resolve().parents[1] / "assets" / "flags"
+flag_path = flag_dir / answer["flag_image"]
+
+if flag_path.exists():
+    st.image(str(flag_path), width=550)
+else:
+    st.warning(f"Flag image not found: {answer['flag_image']}")
 
 options = [c["name"] for c in current["options"]]
 choice = st.radio("Which country's flag is this?", options, index=None)
 
 cols = st.columns(2)
 submit = cols[0].button("Submit", type="primary", disabled=choice is None or current['submitted'])
-nextq = cols[1].button("Next")
 
 if submit and not current["submitted"]:
     current["submitted"] = True
@@ -77,10 +80,11 @@ if submit and not current["submitted"]:
         st.session_state.score += 1
         st.success("Correct! 🎉")
     else:
-        st.error(f"Not quite. The correct answer is **{answer['name']}**.")
-
-if nextq:
+        st.error(f"Incorrect! The correct answer is **{answer['name']}**.")
     new_round(num_options)
+    time.sleep(3)
+    st.rerun()
+    
 
 with st.expander("About this game"):
     st.write(
