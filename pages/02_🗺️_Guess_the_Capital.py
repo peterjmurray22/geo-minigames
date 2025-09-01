@@ -26,4 +26,4 @@ if "game_started" not in st.session_state or not st.session_state.game_started:
         st.rerun()
 else:
     st.metric("Score", st.session_state.score_display)
-    utils.run_multiple_choice_game(st.session_state.pool, st.session_state.num_options, st.session_state.num_rounds, 'name', show_capital_question)
+    utils.run_multiple_choice_game(st.session_state.pool, st.session_state.num_options, st.session_state.num_rounds, 'name', 'flag_distractors', show_capital_question)
