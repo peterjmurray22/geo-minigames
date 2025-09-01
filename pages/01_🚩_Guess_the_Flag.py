@@ -11,7 +11,7 @@ def show_flag_question(round_data):
         st.image(str(flag_path), width=450)
     else:
         st.warning(f"Flag image not found: {answer['flag_image']}")
-    choice = st.radio("Which country's flag is this?", options, index=None)
+    choice = st.radio("Which country's flag is this?", sorted(options), index=None)
     return choice, answer["name"]
 
 # --- App ---
@@ -31,4 +31,4 @@ if "game_started" not in st.session_state or not st.session_state.game_started:
         st.rerun()
 else:
     st.metric("Score", st.session_state.score_display)
-    utils.run_multiple_choice_game(st.session_state.pool, st.session_state.num_options, st.session_state.num_rounds, 'name', show_flag_question)
+    utils.run_multiple_choice_game(st.session_state.pool, st.session_state.num_options, st.session_state.num_rounds, 'name', 'flag_distractors', show_flag_question)

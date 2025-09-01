@@ -3075,7 +3075,7 @@
 		"name": "Saint Pierre and Miquelon",
 		"code": "PM",
 		"capital": "Saint-Pierre",
-		"flag_image": "saint_pierre_and_miquelon.png",
+		"flag_image": "st_pierre_and_miquelon.png",
 		"type": "territory",
 		"flag_distractors": [
 			"Guadeloupe",
