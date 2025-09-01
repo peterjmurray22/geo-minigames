@@ -104,7 +104,11 @@ def run_multiple_choice_game(pool, num_options, num_rounds, key_field, distracto
             "score",
             "rounds",
             "current",
-            "countries"
+            "countries",
+            "score_display",
+            "current_game",
+            "round",
+            "game_title"
         ]
         for key in keys_to_clear:
             if key in st.session_state:
