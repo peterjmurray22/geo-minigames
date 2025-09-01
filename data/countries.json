@@ -4027,5 +4027,71 @@
 			"Malawi",
 			"Mozambique"
 		]
+	},
+	{
+		"name": "Scotland",
+		"code": "",
+		"capital": "Edinburgh",
+		"flag_image": "scotland.png",
+		"type": "territory",
+		"flag_distractors": [
+			"United Kingdom",
+			"England",
+			"Wales",
+			"Northern Ireland",
+			"Isle of Man",
+			"Jersey",
+			"Guernsey"
+		]
+	},
+	{
+		"name": "Wales",
+		"code": "",
+		"capital": "Cardiff",
+		"flag_image": "wales.png",
+		"type": "territory",
+		"flag_distractors": [
+			"United Kingdom",
+			"England",
+			"Scotland",
+			"Northern Ireland",
+			"Isle of Man",
+			"Jersey",
+			"Guernsey"
+		]
+	},
+	{
+		"name": "Northern Ireland",
+		"code": "",
+		"capital": "Edinburgh",
+		"flag_image": "northern_ireland.png",
+		"type": "territory",
+		"flag_distractors": [
+			"United Kingdom",
+			"England",
+			"Wales",
+			"Ireland",
+			"Isle of Man",
+			"Jersey",
+			"Guernsey",
+			"Scotland"
+		]
+	},
+	{
+		"name": "England",
+		"code": "",
+		"capital": "London",
+		"flag_image": "england.png",
+		"type": "territory",
+		"flag_distractors": [
+			"United Kingdom",
+			"Scotland",
+			"Wales",
+			"Northern Ireland",
+			"Isle of Man",
+			"Jersey",
+			"Guernsey",
+			"Ireland"
+		]
 	}
 ]
