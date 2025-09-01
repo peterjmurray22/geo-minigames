@@ -30,7 +30,6 @@ def generate_round(pool, key_field: str, distractor_key: str, num_options: int =
     if len(distractors) < min(num_options - 1, len(remaining)):
         extend_list = [a for a in remaining if a not in distractors and a["name"] != answer["name"]]
         distractors.extend(random.sample(extend_list, k=(min(num_options - 1, len(remaining)) - len(distractors))))
-        print("3", distractors)
     options = distractors + [answer]
 
     return {
