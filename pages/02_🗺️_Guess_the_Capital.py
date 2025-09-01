@@ -6,7 +6,7 @@ def show_capital_question(round_data):
     answer = round_data["answer"]
     options = [c["capital"] for c in round_data["options"]]
     st.write(f"🌍 What is the capital of **{answer['name']}**?")
-    choice = st.radio("Choose the capital:", options, index=None)
+    choice = st.radio("Choose the capital:", sorted(options), index=None)
     return choice, answer["capital"]
 
 # --- App ---

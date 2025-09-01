@@ -18,10 +18,12 @@ def generate_round(pool, key_field: str, distractor_key: str, num_options: int =
     if not pool:
         return None
 
+    pool = [c for c in pool if c[key_field] != ""]
+
     answer = random.choice(pool)
 
     # remove answer from pool
-    remaining = [c for c in pool if c != answer]
+    remaining = [c for c in pool if c != answer and c[key_field] != ""]
 
     # sample distractors
     distractor_list = answer[distractor_key]

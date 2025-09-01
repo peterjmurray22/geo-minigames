@@ -829,7 +829,7 @@
 	{
 		"name": "Curacao",
 		"code": "CW",
-		"capital": " Willemstad",
+		"capital": "Willemstad",
 		"flag_image": "curacao.png",
 		"type": "territory",
 		"flag_distractors": [
