@@ -1992,7 +1992,7 @@
 	{
 		"name": "Libya",
 		"code": "LY",
-		"capital": "Tripolis",
+		"capital": "Tripoli",
 		"flag_image": "libya.png",
 		"type": "nation",
 		"flag_distractors": [
@@ -3241,7 +3241,7 @@
 	{
 		"name": "Singapore",
 		"code": "SG",
-		"capital": "Singapur",
+		"capital": "Singapore",
 		"flag_image": "singapore.png",
 		"type": "nation",
 		"flag_distractors": [
@@ -4063,7 +4063,7 @@
 	{
 		"name": "Northern Ireland",
 		"code": "",
-		"capital": "Edinburgh",
+		"capital": "Belfast",
 		"flag_image": "northern_ireland.png",
 		"type": "territory",
 		"flag_distractors": [

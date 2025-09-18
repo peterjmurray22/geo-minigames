@@ -11,10 +11,6 @@ def load_countries():
         return json.load(f)
 
 def generate_round(pool, key_field: str, distractor_key: str, num_options: int = 4):
-    """
-    pool: list of dicts (e.g., countries)
-    key_field: the field used for correct answer ("name", "capital", etc.)
-    """
     if not pool:
         return None
 
@@ -24,6 +20,13 @@ def generate_round(pool, key_field: str, distractor_key: str, num_options: int =
 
     # remove answer from pool
     remaining = [c for c in pool if c != answer and c[key_field] != ""]
+
+    if st.session_state.input == "Text Entry":
+        return {
+            "answer": answer,
+            "options": [],
+            "key_field": key_field,
+        }, remaining
 
     # sample distractors
     distractor_list = answer[distractor_key]
@@ -43,7 +46,10 @@ def generate_round(pool, key_field: str, distractor_key: str, num_options: int =
 def setup_screen(countries):
     nations = st.checkbox("Nations", value=True)
     territories = st.checkbox("Territories", value=True)
-    num_options = st.slider("Number of choices", 2, 10, 4)
+    input = st.radio("Input type", ["Multiple Choice", "Text Entry"], index=0, horizontal=True)
+    num_options = None
+    if input == "Multiple Choice":
+        num_options = st.slider("Number of choices", 2, 10, 4)
     num_rounds = st.slider("Number of rounds", 1, 50, 10)
 
     st.session_state.score = 0
@@ -57,8 +63,8 @@ def setup_screen(countries):
         if territories:
             pool.extend([c for c in countries if c["type"] == "territory"])
         st.session_state.game_started = True
-        return pool, num_options, num_rounds
-    return None, None, None
+        return pool, input, num_options, num_rounds
+    return None, None, None, None
 
 def update_score():
     st.session_state.score_display = f"{st.session_state.score} / {st.session_state.rounds} - {round(st.session_state.score/st.session_state.rounds * 100) if st.session_state.rounds > 0 else 0}%"
@@ -70,22 +76,38 @@ def init_game(game_title):
         if "round" in st.session_state:
             del st.session_state["round"]
 
-def run_multiple_choice_game(pool, num_options, num_rounds, key_field, distractor_key, show_question_fn):
+def show_multiple_choice_options(question_text, options):
+    choice = st.radio(question_text, sorted(options), index=None, key="multiple_choice")
+    return choice
+
+def show_text_entry(question_text):
+    entry = st.text_input(question_text, key="text_entry")
+    return entry
+
+def submit_answer():
+    if st.session_state.input == "Multiple Choice":
+        st.session_state.submitted = st.session_state.multiple_choice
+        st.session_state.multiple_choice = None
+    else:
+        st.session_state.submitted = st.session_state.text_entry
+        st.session_state.text_entry = ""
+
+def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_question_fn):
     if "round" not in st.session_state:
         round_data, pool = generate_round(pool, key_field, distractor_key, num_options)
         st.session_state.round = round_data
         st.session_state.pool = pool
 
     current = st.session_state.round
-    choice, correct = show_question_fn(current)
+    submitted = show_question_fn(current, st.session_state.input == "Multiple Choice")
 
-    if st.button("Submit", disabled=choice is None or st.session_state.rounds == num_rounds):
+    if st.button("Submit", disabled=submitted is None or submitted == "" or st.session_state.rounds == num_rounds, on_click=submit_answer):
         st.session_state.rounds += 1
-        if choice == correct:
+        if st.session_state.submitted.lower().strip() == st.session_state.correct.lower().strip():
             st.session_state.score += 1
             st.success("Correct! 🎉")
         else:
-            st.error(f"Incorrect! The correct answer is **{correct}**.")
+            st.error(f"Incorrect! The correct answer is **{st.session_state.correct}**.")
 
         update_score()
         if st.session_state.rounds < num_rounds and st.session_state.pool:
@@ -110,10 +132,10 @@ def run_multiple_choice_game(pool, num_options, num_rounds, key_field, distracto
             "score_display",
             "current_game",
             "round",
-            "game_title"
+            "game_title",
+            "correct"
         ]
         for key in keys_to_clear:
             if key in st.session_state:
                 del st.session_state[key]
         st.rerun()
-
