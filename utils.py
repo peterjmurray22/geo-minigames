@@ -10,7 +10,7 @@ def load_countries():
     with open(data_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-def generate_round(pool, key_field: str, distractor_key: str, num_options: int = 4):
+def generate_round(pool, key_field: str, distractor_key: str, num_options: int = 4, verify_distractors=True):
     if not pool:
         return None
 
@@ -30,12 +30,22 @@ def generate_round(pool, key_field: str, distractor_key: str, num_options: int =
 
     # sample distractors
     distractor_list = answer[distractor_key]
-    distractors = [d for d in remaining if d["name"] in distractor_list]
-    distractors = random.sample(distractors, k=min(num_options - 1, len(distractors)))
-    if len(distractors) < min(num_options - 1, len(remaining)):
-        extend_list = [a for a in remaining if a not in distractors and a["name"] != answer["name"]]
-        distractors.extend(random.sample(extend_list, k=(min(num_options - 1, len(remaining)) - len(distractors))))
-    options = distractors + [answer]
+    distractors = []
+    options = []
+    if verify_distractors:
+        distractors = [d for d in remaining if d[key_field] in distractor_list]
+        distractors = random.sample(distractors, k=min(num_options - 1, len(distractors)))
+        if len(distractors) < min(num_options - 1, len(remaining)):
+            extend_list = [a for a in remaining if a not in distractors and a["name"] != answer["name"]]
+            distractors.extend(random.sample(extend_list, k=(min(num_options - 1, len(remaining)) - len(distractors))))
+        options = [d[key_field] for d in distractors] + [answer[key_field]]
+    else:
+        distractors = distractor_list
+        distractors = random.sample(distractors, k=min(num_options - 1, len(distractors)))
+        if len(distractors) < min(num_options - 1, len(remaining)):
+            extend_list = [a[key_field] for a in remaining if a[key_field] not in distractors and a["name"] != answer["name"]]
+            distractors.extend(random.sample(extend_list, k=(min(num_options - 1, len(remaining)) - len(distractors))))
+        options = distractors + [answer[key_field]]
 
     return {
         "answer": answer,
@@ -75,7 +85,7 @@ def show_image_question(round_data, image_dir, image_key, question_text, multipl
     else:
         st.warning(f"Image not found: {answer[image_key]}")
     if multiple_choice:
-        options = [c["name"] for c in round_data["options"]]
+        options = round_data["options"]
         submitted = show_multiple_choice_options(question_text, options)
     else:
         submitted = show_text_entry(question_text)
@@ -107,9 +117,9 @@ def submit_answer():
         st.session_state.submitted = st.session_state.text_entry
         st.session_state.text_entry = ""
 
-def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_question_fn):
+def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_question_fn, verify_distractors=True):
     if "round" not in st.session_state:
-        round_data, pool = generate_round(pool, key_field, distractor_key, num_options)
+        round_data, pool = generate_round(pool, key_field, distractor_key, num_options, verify_distractors)
         st.session_state.round = round_data
         st.session_state.pool = pool
 
@@ -126,7 +136,7 @@ def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_ques
 
         update_score()
         if st.session_state.rounds < num_rounds and st.session_state.pool:
-            round_data, pool = generate_round(st.session_state.pool, key_field, distractor_key, num_options)
+            round_data, pool = generate_round(st.session_state.pool, key_field, distractor_key, num_options, verify_distractors)
             st.session_state.round = round_data
             st.session_state.pool = pool
         else:

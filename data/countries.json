@@ -11,7 +11,8 @@
 			"Tajikistan",
 			"Turkmenistan",
 			"Uzbekistan"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Aland Islands",
@@ -25,7 +26,8 @@
 			"Norway",
 			"Iceland",
 			"Faroe Islands"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Albania",
@@ -39,7 +41,8 @@
 			"Montenegro",
 			"Greece",
 			"Serbia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Algeria",
@@ -53,7 +56,8 @@
 			"Libya",
 			"Mauritania",
 			"Egypt"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "American Samoa",
@@ -67,7 +71,8 @@
 			"Fiji",
 			"Tuvalu",
 			"Papua New Guinea"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Andorra",
@@ -81,7 +86,8 @@
 			"San Marino",
 			"Luxembourg",
 			"Moldova"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Angola",
@@ -95,7 +101,8 @@
 			"Zambia",
 			"Zimbabwe",
 			"South Africa"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Anguilla",
@@ -109,7 +116,8 @@
 			"Cayman Islands",
 			"Saint Kitts and Nevis",
 			"Turks and Caicos Islands"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Antarctica",
@@ -122,7 +130,8 @@
 			"Iceland",
 			"South Georgia and the South Sandwich Islands",
 			"Falkland Islands"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Antigua and Barbuda",
@@ -136,7 +145,8 @@
 			"Barbados",
 			"Saint Lucia",
 			"Trinidad and Tobago"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Argentina",
@@ -150,7 +160,8 @@
 			"Chile",
 			"Guatemala",
 			"Honduras"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Armenia",
@@ -164,7 +175,8 @@
 			"Colombia",
 			"Chad",
 			"Venezuela"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Aruba",
@@ -178,7 +190,8 @@
 			"Bonaire, Saint Eustatius and Saba",
 			"Saint Martin",
 			"Barbados"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Australia",
@@ -192,6 +205,9 @@
 			"Tuvalu",
 			"Turks and Caicos Islands",
 			"Montserrat"
+		],
+        "capital_distractors": [
+			"Sydney"
 		]
 	},
 	{
@@ -207,7 +223,8 @@
 			"Monaco",
 			"Malta",
 			"Switzerland"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Azerbaijan",
@@ -221,7 +238,8 @@
 			"Turkmenistan",
 			"Kazakhstan",
 			"Uzbekistan"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Bahamas",
@@ -235,7 +253,8 @@
 			"Saint Lucia",
 			"Bermuda",
 			"Turks and Caicos Islands"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Bahrain",
@@ -249,6 +268,9 @@
 			"Oman",
 			"Kuwait",
 			"Saudi Arabia"
+		],
+        "capital_distractors": [
+			"Bahrain City"
 		]
 	},
 	{
@@ -263,7 +285,8 @@
 			"Nepal",
 			"Maldives",
 			"Bhutan"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Barbados",
@@ -277,7 +300,8 @@
 			"Trinidad and Tobago",
 			"Jamaica",
 			"Belize"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Belarus",
@@ -292,7 +316,8 @@
 			"Lithuania",
 			"Latvia",
 			"Turkmenistan"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Belgium",
@@ -307,7 +332,8 @@
 			"Romania",
 			"Luxembourg",
 			"Liechtenstein"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Belize",
@@ -321,7 +347,8 @@
 			"El Salvador",
 			"Nicaragua",
 			"Haiti"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Benin",
@@ -336,7 +363,8 @@
 			"Cameroon",
 			"Senegal",
 			"Madagascar"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Bermuda",
@@ -350,7 +378,8 @@
 			"Cayman Islands",
 			"Falkland Islands",
 			"Anguilla"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Bhutan",
@@ -364,7 +393,8 @@
 			"Bangladesh",
 			"Maldives",
 			"Tibet"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Bolivia",
@@ -378,7 +408,8 @@
 			"Ecuador",
 			"Venezuela",
 			"Paraguay"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Bonaire, Saint Eustatius and Saba",
@@ -392,7 +423,8 @@
 			"Sint Maarten",
 			"Saint Kitts and Nevis",
 			"Turks and Caicos Islands"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Bosnia and Herzegovina",
@@ -406,7 +438,8 @@
 			"Montenegro",
 			"Slovenia",
 			"North Macedonia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Botswana",
@@ -423,7 +456,8 @@
 			"Eswatini",
 			"Mozambique",
 			"Tanzania"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Brazil",
@@ -440,6 +474,10 @@
 			"Guyana",
 			"Paraguay",
 			"Suriname"
+		],
+        "capital_distractors": [
+			"Rio de Janeiro",
+			"Sao Paulo"
 		]
 	},
 	{
@@ -457,7 +495,8 @@
 			"Falkland Islands",
 			"Montserrat",
 			"Saint Helena"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "British Virgin Islands",
@@ -474,7 +513,8 @@
 			"US Virgin Islands",
 			"Bahamas",
 			"Barbados"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Brunei",
@@ -491,7 +531,8 @@
 			"Philippines",
 			"Vietnam",
 			"Cambodia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Bulgaria",
@@ -508,7 +549,8 @@
 			"Slovenia",
 			"Croatia",
 			"Serbia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Burkina Faso",
@@ -525,7 +567,8 @@
 			"Guinea",
 			"Cote d'Ivoire",
 			"Cameroon"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Burundi",
@@ -542,7 +585,8 @@
 			"Zambia",
 			"Somalia",
 			"Democratic Republic of the Congo"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Cambodia",
@@ -559,7 +603,8 @@
 			"Singapore",
 			"Indonesia",
 			"Myanmar"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Cameroon",
@@ -576,7 +621,8 @@
 			"Togo",
 			"Burkina Faso",
 			"Equatorial Guinea"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Canada",
@@ -593,6 +639,11 @@
 			"Finland",
 			"Latvia",
 			"Japan"
+		],
+        "capital_distractors": [
+			"Toronto",
+			"Vancouver",
+			"Montreal"
 		]
 	},
 	{
@@ -610,7 +661,8 @@
 			"Equatorial Guinea",
 			"Saint Kitts and Nevis",
 			"Azores"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Cayman Islands",
@@ -627,7 +679,8 @@
 			"Falkland Islands",
 			"Saint Helena",
 			"Saint Kitts and Nevis"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Central African Republic",
@@ -644,7 +697,8 @@
 			"Sudan",
 			"South Sudan",
 			"Benin"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Chad",
@@ -661,7 +715,8 @@
 			"Senegal",
 			"Guinea",
 			"Cote d'Ivoire"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Chile",
@@ -677,7 +732,8 @@
 			"Norway",
 			"Costa Rica",
 			"Thailand"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "China",
@@ -694,6 +750,9 @@
 			"Mongolia",
 			"South Korea",
 			"Laos"
+		],
+        "capital_distractors": [
+			"Shanghai"
 		]
 	},
 	{
@@ -709,7 +768,8 @@
 			"Fiji",
 			"New Zealand",
 			"Indonesia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Cocos Islands",
@@ -725,7 +785,8 @@
 			"Papua New Guinea",
 			"Singapore",
 			"Maldives"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Colombia",
@@ -740,6 +801,9 @@
 			"Bolivia",
 			"Panama",
 			"Chile"
+		],
+        "capital_distractors": [
+			"Medellin"
 		]
 	},
 	{
@@ -757,7 +821,8 @@
 			"Tanzania",
 			"Mayotte",
 			"Reunion"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Cook Islands",
@@ -774,7 +839,8 @@
 			"Samoa",
 			"American Samoa",
 			"Papua New Guinea"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Costa Rica",
@@ -790,7 +856,8 @@
 			"Panama",
 			"Colombia",
 			"Thailand"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Croatia",
@@ -807,6 +874,9 @@
 			"Czech Republic",
 			"Russia",
 			"Luxembourg"
+		],
+        "capital_distractors": [
+			"Split"
 		]
 	},
 	{
@@ -824,7 +894,8 @@
 			"North Korea",
 			"Honduras",
 			"Somalia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Curacao",
@@ -840,7 +911,8 @@
 			"Saint Kitts and Nevis",
 			"Turks and Caicos Islands",
 			"Bahamas"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Cyprus",
@@ -857,7 +929,8 @@
 			"Jordan",
 			"Egypt",
 			"Libya"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Czech Republic",
@@ -874,6 +947,9 @@
 			"Serbia",
 			"France",
 			"Netherlands"
+		],
+        "capital_distractors": [
+			"Brno"
 		]
 	},
 	{
@@ -891,7 +967,8 @@
 			"Cameroon",
 			"South Sudan",
 			"Zambia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Denmark",
@@ -908,7 +985,8 @@
 			"Austria",
 			"England",
 			"Latvia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Djibouti",
@@ -925,7 +1003,8 @@
 			"Kenya",
 			"Comoros",
 			"Yemen"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Dominica",
@@ -942,7 +1021,8 @@
 			"Antigua and Barbuda",
 			"Grenada",
 			"Saint Kitts and Nevis"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Dominican Republic",
@@ -959,7 +1039,8 @@
 			"Saint Kitts and Nevis",
 			"Barbados",
 			"Trinidad and Tobago"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Timor Leste",
@@ -975,7 +1056,8 @@
 			"Papua New Guinea",
 			"Saint Lucia",
 			"Guyana"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Ecuador",
@@ -991,7 +1073,8 @@
 			"Chile",
 			"Panama",
 			"Argentina"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Egypt",
@@ -1008,7 +1091,8 @@
 			"Jordan",
 			"United Arab Emirates",
 			"Palestine"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "El Salvador",
@@ -1024,7 +1108,8 @@
 			"Panama",
 			"Belize",
 			"Argentina"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Equatorial Guinea",
@@ -1041,7 +1126,8 @@
 			"Benin",
 			"Guinea-Bissau",
 			"Togo"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Eritrea",
@@ -1058,7 +1144,8 @@
 			"Kenya",
 			"Comoros",
 			"Uganda"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Estonia",
@@ -1075,7 +1162,8 @@
 			"France",
 			"Luxembourg",
 			"Croatia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Ethiopia",
@@ -1092,7 +1180,8 @@
 			"Kenya",
 			"Uganda",
 			"Cameroon"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Falkland Islands",
@@ -1109,7 +1198,8 @@
 			"Anguilla",
 			"Turks and Caicos Islands",
 			"Pitcairn Islands"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Faroe Islands",
@@ -1126,7 +1216,8 @@
 			"Greenland",
 			"Scotland",
 			"Aland Islands"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Fiji",
@@ -1143,7 +1234,8 @@
 			"Papua New Guinea",
 			"Samoa",
 			"American Samoa"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Finland",
@@ -1160,7 +1252,8 @@
 			"Slovakia",
 			"Switzerland",
 			"Greece"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "France",
@@ -1177,7 +1270,8 @@
 			"Romania",
 			"Andorra",
 			"Belgium"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "French Guiana",
@@ -1193,7 +1287,8 @@
 			"Colombia",
 			"Paraguay",
 			"Bolivia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "French Polynesia",
@@ -1210,7 +1305,8 @@
 			"American Samoa",
 			"French Southern Territories",
 			"British Indian Ocean Territory"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "French Southern Territories",
@@ -1224,7 +1320,8 @@
 			"French Polynesia",
 			"British Indian Ocean Territory",
 			"Greenalnd"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Gabon",
@@ -1241,7 +1338,8 @@
 			"Benin",
 			"Angola",
 			"Democratic Republic of the Congo"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Gambia",
@@ -1258,7 +1356,8 @@
 			"Benin",
 			"Mali",
 			"Cape Verde"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Georgia",
@@ -1275,7 +1374,8 @@
 			"Malta",
 			"England",
 			"Switzerland"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Germany",
@@ -1292,6 +1392,9 @@
 			"Angola",
 			"Uganda",
 			"Spain"
+		],
+        "capital_distractors": [
+			"Munich"
 		]
 	},
 	{
@@ -1309,7 +1412,8 @@
 			"Senegal",
 			"Burkina Faso",
 			"Equatorial Guinea"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Gibraltar",
@@ -1326,7 +1430,8 @@
 			"Saint Helena",
 			"Bermuda",
 			"Vatican City"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Greece",
@@ -1343,7 +1448,8 @@
 			"Argentina",
 			"Uruguay",
 			"Croatia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Greenland",
@@ -1360,7 +1466,8 @@
 			"Japan",
 			"Poland",
 			"Antarctica"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Grenada",
@@ -1377,7 +1484,8 @@
 			"Jamaica",
 			"Trinidad and Tobago",
 			"Antigua and Barbuda"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Guadeloupe",
@@ -1393,7 +1501,8 @@
 			"Dominica",
 			"Saint Lucia",
 			"Puerto Rico"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Guam",
@@ -1410,7 +1519,8 @@
 			"Hawaii",
 			"Philippines",
 			"Japan"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Guatemala",
@@ -1427,7 +1537,8 @@
 			"Mexico",
 			"Argentina",
 			"Uruguay"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Guernsey",
@@ -1444,7 +1555,8 @@
 			"Norway",
 			"Sweden",
 			"Isle of Man"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Guinea",
@@ -1461,7 +1573,8 @@
 			"Cote d'Ivoire",
 			"Equatorial Guinea",
 			"Papua New Guinea"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Guinea-Bissau",
@@ -1478,7 +1591,8 @@
 			"Mali",
 			"Papua New Guinea",
 			"Equatorial Guinea"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Guyana",
@@ -1495,7 +1609,8 @@
 			"Paraguay",
 			"Belize",
 			"Colombia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Haiti",
@@ -1512,7 +1627,8 @@
 			"El Salvador",
 			"Chile",
 			"Belize"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Honduras",
@@ -1529,7 +1645,8 @@
 			"Mexico",
 			"Argentina",
 			"Paraguay"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Hong Kong",
@@ -1546,7 +1663,8 @@
 			"Taiwan",
 			"Vietnam",
 			"North Korea"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Hungary",
@@ -1563,7 +1681,8 @@
 			"Latvia",
 			"Lithuania",
 			"Austria"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Iceland",
@@ -1580,7 +1699,8 @@
 			"England",
 			"Aland Islands",
 			"Greenland"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "India",
@@ -1597,6 +1717,9 @@
 			"Bangladesh",
 			"Pakistan",
 			"Sri Lanka"
+		],
+        "capital_distractors": [
+			"Mumbai"
 		]
 	},
 	{
@@ -1614,6 +1737,9 @@
 			"Japan",
 			"Maldives",
 			"Thailand"
+		],
+        "capital_distractors": [
+			"Bali"
 		]
 	},
 	{
@@ -1631,7 +1757,8 @@
 			"Bulgaria",
 			"Lebanon",
 			"Syria"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Iraq",
@@ -1648,7 +1775,8 @@
 			"Kuwait",
 			"Iran",
 			"Sudan"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Ireland",
@@ -1665,6 +1793,10 @@
 			"Mexico",
 			"Benin",
 			"France"
+		],
+        "capital_distractors": [
+			"Belfast",
+			"Cork"
 		]
 	},
 	{
@@ -1681,7 +1813,8 @@
 			"Scotland",
 			"Ireland",
 			"Northern Ireland"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Israel",
@@ -1698,7 +1831,8 @@
 			"Uruguay",
 			"Palestine",
 			"Estonia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Italy",
@@ -1715,6 +1849,9 @@
 			"Malta",
 			"San Marino",
 			"Hungary"
+		],
+        "capital_distractors": [
+			"Milan"
 		]
 	},
 	{
@@ -1732,7 +1869,8 @@
 			"Hungary",
 			"Mexico",
 			"India"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Jamaica",
@@ -1749,7 +1887,8 @@
 			"Dominica",
 			"Belize",
 			"Antigua and Barbuda"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Japan",
@@ -1766,6 +1905,10 @@
 			"Turkiye",
 			"Morocco",
 			"Tunisia"
+		],
+        "capital_distractors": [
+			"Osaka",
+			"Kyoto"
 		]
 	},
 	{
@@ -1783,7 +1926,8 @@
 			"Norway",
 			"Northern Ireland",
 			"Isle of Man"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Jordan",
@@ -1800,7 +1944,8 @@
 			"Egypt",
 			"Kuwait",
 			"United Arab Emirates"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Kazakhstan",
@@ -1817,6 +1962,9 @@
 			"Azerbaijan",
 			"Afghanistan",
 			"Georgia"
+		],
+        "capital_distractors": [
+			"Almaty"
 		]
 	},
 	{
@@ -1834,6 +1982,9 @@
 			"Burundi",
 			"Rwanda",
 			"Malawi"
+		],
+        "capital_distractors": [
+			"Mombasa"
 		]
 	},
 	{
@@ -1851,7 +2002,8 @@
 			"British Indian Ocean Territory",
 			"Solomon Islands",
 			"French Polynesia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Kosovo",
@@ -1868,7 +2020,8 @@
 			"Slovenia",
 			"Croatia",
 			"Cyprus"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Kuwait",
@@ -1885,7 +2038,8 @@
 			"Sudan",
 			"Egypt",
 			"Yemen"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Kyrgyzstan",
@@ -1902,7 +2056,8 @@
 			"Azerbaijan",
 			"Afghanistan",
 			"Georgia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Laos",
@@ -1919,7 +2074,8 @@
 			"Philippines",
 			"North Korea",
 			"South Korea"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Latvia",
@@ -1936,7 +2092,8 @@
 			"Indonesia",
 			"Monaco",
 			"Singapore"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Lebanon",
@@ -1953,7 +2110,8 @@
 			"Jordan",
 			"Iraq",
 			"Sudan"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Lesotho",
@@ -1970,7 +2128,8 @@
 			"Zambia",
 			"Malawi",
 			"Mozambique"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Liberia",
@@ -1987,7 +2146,8 @@
 			"Texas",
 			"Seychelles",
 			"Thailand"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Libya",
@@ -2004,7 +2164,8 @@
 			"Palestine",
 			"Turkiye",
 			"Comoros"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Liechtenstein",
@@ -2021,6 +2182,9 @@
 			"Luxembourg",
 			"Belgium",
 			"Malta"
+		],
+        "capital_distractors": [
+			"Liechtenstein"
 		]
 	},
 	{
@@ -2038,7 +2202,8 @@
 			"Hungary",
 			"Mexico",
 			"Guinea"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Luxembourg",
@@ -2055,7 +2220,8 @@
 			"Slovakia",
 			"Serbia",
 			"Slovenia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Macau",
@@ -2072,7 +2238,8 @@
 			"Taiwan",
 			"Japan",
 			"Philippines"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "North Macedonia",
@@ -2089,7 +2256,8 @@
 			"Romania",
 			"Bulgaria",
 			"Turkiye"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Madagascar",
@@ -2106,7 +2274,8 @@
 			"Kenya",
 			"Tanzania",
 			"Zambia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Malawi",
@@ -2123,7 +2292,8 @@
 			"Lesotho",
 			"Mozambique",
 			"Burundi"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Malaysia",
@@ -2140,7 +2310,8 @@
 			"Brunei",
 			"Philippines",
 			"Vietnam"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Maldives",
@@ -2157,7 +2328,8 @@
 			"Libya",
 			"Comoros",
 			"Morocco"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Mali",
@@ -2174,7 +2346,8 @@
 			"Ivory Coast",
 			"Ghana",
 			"Zimbabwe"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Malta",
@@ -2191,7 +2364,8 @@
 			"Austria",
 			"Denmark",
 			"France"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Marshall Islands",
@@ -2208,7 +2382,8 @@
 			"Tuvalu",
 			"Vanuatu",
 			"Samoa"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Martinique",
@@ -2225,7 +2400,8 @@
 			"Saint Lucia",
 			"Puerto Rico",
 			"Jamaica"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Mauritania",
@@ -2242,7 +2418,8 @@
 			"Tunisia",
 			"Comoros",
 			"Western Sahara"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Mauritius",
@@ -2259,7 +2436,8 @@
 			"Tanzania",
 			"South Africa",
 			"Zambia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Mayotte",
@@ -2276,7 +2454,8 @@
 			"France",
 			"Guadeloupe",
 			"Martinique"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Mexico",
@@ -2292,7 +2471,8 @@
 			"Peru",
 			"India",
 			"France"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Micronesia",
@@ -2309,7 +2489,8 @@
 			"Samoa",
 			"Vanuatu",
 			"Somalia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Moldova",
@@ -2326,7 +2507,8 @@
 			"Luxembourg",
 			"Monaco",
 			"Italy"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Monaco",
@@ -2343,7 +2525,8 @@
 			"Malta",
 			"Denmark",
 			"Japan"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Mongolia",
@@ -2360,7 +2543,8 @@
 			"India",
 			"Kazakhstan",
 			"Kyrgyzstan"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Montenegro",
@@ -2377,7 +2561,8 @@
 			"Bosnia and Herzegovina",
 			"Romania",
 			"Bulgaria"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Montserrat",
@@ -2394,7 +2579,8 @@
 			"Jamaica",
 			"Saint Kitts and Nevis",
 			"Barbados"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Morocco",
@@ -2411,6 +2597,10 @@
 			"Jordan",
 			"Palestine",
 			"Comoros"
+		],
+        "capital_distractors": [
+			"Casablanca",
+			"Marrakech"
 		]
 	},
 	{
@@ -2428,7 +2618,8 @@
 			"Angola",
 			"Namibia",
 			"Burundi"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Myanmar",
@@ -2445,7 +2636,8 @@
 			"India",
 			"Thailand",
 			"Vietnam"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Namibia",
@@ -2462,7 +2654,8 @@
 			"Botswana",
 			"Lesotho",
 			"Eswatini"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Nauru",
@@ -2479,7 +2672,8 @@
 			"Samoa",
 			"Vanuatu",
 			"Fiji"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Nepal",
@@ -2496,7 +2690,8 @@
 			"Samoa",
 			"Vanuatu",
 			"Bhutan"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Netherlands",
@@ -2513,6 +2708,9 @@
 			"Serbia",
 			"Slovakia",
 			"Slovenia"
+		],
+        "capital_distractors": [
+			"Rotterdam"
 		]
 	},
 	{
@@ -2530,7 +2728,8 @@
 			"Solomon Islands",
 			"Kiribati",
 			"Samoa"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "New Zealand",
@@ -2546,6 +2745,9 @@
 			"Niue",
 			"Turks and Caicos Islands",
 			"Saint Helena"
+		],
+        "capital_distractors": [
+			"Auckland"
 		]
 	},
 	{
@@ -2563,6 +2765,9 @@
 			"Paraguay",
 			"Uruguay",
 			"Chile"
+		],
+        "capital_distractors": [
+			"Nicaragua City"
 		]
 	},
 	{
@@ -2581,7 +2786,8 @@
 			"Mexico",
 			"Hungary",
 			"Nigeria"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Nigeria",
@@ -2598,6 +2804,9 @@
 			"Guinea",
 			"Algeria",
 			"Nigeria"
+		],
+        "capital_distractors": [
+			"Lagos"
 		]
 	},
 	{
@@ -2615,7 +2824,8 @@
 			"Turks and Caicos Islands",
 			"Anguilla",
 			"Papua New Guinea"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Norfolk Island",
@@ -2632,7 +2842,8 @@
 			"Pitcairn Islands",
 			"Solomon Islands",
 			"Samoa"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "North Korea",
@@ -2649,7 +2860,8 @@
 			"Thailand",
 			"Laos",
 			"South Korea"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Northern Mariana Islands",
@@ -2666,7 +2878,8 @@
 			"Fiji",
 			"New Caledonia",
 			"Tonga"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Norway",
@@ -2683,7 +2896,8 @@
 			"Greenland",
 			"Estonia",
 			"Aland Islands"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Oman",
@@ -2700,7 +2914,8 @@
 			"Bahrain",
 			"Qatar",
 			"Iraq"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Pakistan",
@@ -2717,6 +2932,10 @@
 			"Libya",
 			"Comoros",
 			"Sudan"
+		],
+        "capital_distractors": [
+			"Karachi",
+			"Lahore"
 		]
 	},
 	{
@@ -2734,7 +2953,8 @@
 			"Fiji",
 			"Samoa",
 			"Vanuatu"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Palestine",
@@ -2751,7 +2971,8 @@
 			"Egypt",
 			"Western Sahara",
 			"Libya"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Panama",
@@ -2768,7 +2989,8 @@
 			"United States",
 			"Cuba",
 			"Dominican Republic"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Papua New Guinea",
@@ -2784,7 +3006,8 @@
 			"New Zealand",
 			"Samoa",
 			"Kiribati"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Paraguay",
@@ -2801,7 +3024,8 @@
 			"France",
 			"Slovakia",
 			"Slovenia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Peru",
@@ -2818,7 +3042,8 @@
 			"Monaco",
 			"France",
 			"Switzerland"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Philippines",
@@ -2835,6 +3060,9 @@
 			"Malaysia",
 			"Timor Leste",
 			"Vietnam"
+		],
+        "capital_distractors": [
+			"Davao"
 		]
 	},
 	{
@@ -2852,7 +3080,8 @@
 			"New Zealand",
 			"Australia",
 			"Niue"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Poland",
@@ -2869,6 +3098,10 @@
 			"Singapore",
 			"Japan",
 			"Canada"
+		],
+        "capital_distractors": [
+			"Krakow",
+			"Lodz"
 		]
 	},
 	{
@@ -2886,6 +3119,9 @@
 			"Guinea-Bissau",
 			"Senegal",
 			"Brazil"
+		],
+        "capital_distractors": [
+			"Porto"
 		]
 	},
 	{
@@ -2903,7 +3139,8 @@
 			"Dominican Republic",
 			"Thailand",
 			"Texas"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Qatar",
@@ -2920,7 +3157,8 @@
 			"Jordan",
 			"Yemen",
 			"Iraq"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Republic of the Congo",
@@ -2937,7 +3175,8 @@
 			"Senegal",
 			"Angola",
 			"Burundi"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Reunion",
@@ -2954,7 +3193,8 @@
 			"Seychelles",
 			"Comoros",
 			"Madagascar"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Romania",
@@ -2970,6 +3210,9 @@
 			"Italy",
 			"Luxembourg",
 			"Monaco"
+		],
+        "capital_distractors": [
+			"Cluj-Napoca"
 		]
 	},
 	{
@@ -2987,6 +3230,9 @@
 			"Croatia",
 			"Serbia",
 			"France"
+		],
+        "capital_distractors": [
+			"Saint Petersburg"
 		]
 	},
 	{
@@ -3004,7 +3250,8 @@
 			"Zambia",
 			"Namibia",
 			"Lesotho"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Saint Barthelemy",
@@ -3020,7 +3267,8 @@
 			"Anguilla",
 			"Montserrat",
 			"Barbados"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Saint Helena",
@@ -3035,7 +3283,8 @@
 			"Anguilla",
 			"Pitcairn Islands",
 			"Niue"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Saint Kitts and Nevis",
@@ -3052,7 +3301,8 @@
 			"Dominica",
 			"Saint Lucia",
 			"Montserrat"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Saint Lucia",
@@ -3069,7 +3319,8 @@
 			"Montserrat",
 			"Trinidad and Tobago",
 			"Guyana"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Saint Pierre and Miquelon",
@@ -3084,7 +3335,8 @@
 			"Saint Martin",
 			"Greenland",
 			"Faroe Islands"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Saint Vincent and the Grenadines",
@@ -3100,7 +3352,8 @@
 			"Trinidad and Tobago",
 			"Montserrat",
 			"Bahamas"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Samoa",
@@ -3117,7 +3370,8 @@
 			"Niue",
 			"Vanuatu",
 			"American Samoa"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "San Marino",
@@ -3134,7 +3388,8 @@
 			"Slovenia",
 			"France",
 			"Liechtenstein"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Sao Tome and Principe",
@@ -3151,7 +3406,8 @@
 			"Mali",
 			"Senegal",
 			"Burkina Faso"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Saudi Arabia",
@@ -3168,6 +3424,10 @@
 			"United Arab Emirates",
 			"Qatar",
 			"Bahrain"
+		],
+        "capital_distractors": [
+			"Mecca",
+			"Jeddah"
 		]
 	},
 	{
@@ -3185,7 +3445,8 @@
 			"Equatorial Guinea",
 			"Ghana",
 			"Republic of the Congo"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Serbia",
@@ -3202,6 +3463,9 @@
 			"Montenegro",
 			"Bosnia and Herzegovina",
 			"North Macedonia"
+		],
+        "capital_distractors": [
+			"Novi Sad"
 		]
 	},
 	{
@@ -3219,7 +3483,8 @@
 			"Vanuatu",
 			"Fiji",
 			"Kiribati"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Sierra Leone",
@@ -3236,7 +3501,8 @@
 			"Estonia",
 			"Slovakia",
 			"Gabon"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Singapore",
@@ -3253,7 +3519,8 @@
 			"Poland",
 			"Maldives",
 			"Bangladesh"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Sint Maarten",
@@ -3270,7 +3537,8 @@
 			"Cuba",
 			"Dominican Republic",
 			"Saint Kitts and Nevis"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Slovakia",
@@ -3285,6 +3553,9 @@
 			"Croatia",
 			"Serbia",
 			"Montenegro"
+		],
+        "capital_distractors": [
+			"Kosice"
 		]
 	},
 	{
@@ -3300,6 +3571,9 @@
 			"Croatia",
 			"Serbia",
 			"Montenegro"
+		],
+        "capital_distractors": [
+			"Maribor"
 		]
 	},
 	{
@@ -3317,7 +3591,8 @@
 			"Samoa",
 			"New Caledonia",
 			"Niue"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Somalia",
@@ -3334,7 +3609,8 @@
 			"Nicaragua",
 			"Israel",
 			"Vietnam"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "South Africa",
@@ -3351,6 +3627,9 @@
 			"Botswana",
 			"Mozambique",
 			"Angola"
+		],
+        "capital_distractors": [
+			"Johannesburg"
 		]
 	},
 	{
@@ -3368,7 +3647,8 @@
 			"Niue",
 			"Cocos Islands",
 			"Turks and Caicos Islands"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "South Korea",
@@ -3384,7 +3664,8 @@
 			"Vietnam",
 			"Thailand",
 			"Palestine"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "South Sudan",
@@ -3401,7 +3682,8 @@
 			"Somalia",
 			"Central African Republic",
 			"Libya"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Spain",
@@ -3418,6 +3700,9 @@
 			"Belgium",
 			"Italy",
 			"France"
+		],
+        "capital_distractors": [
+			"Barcelona"
 		]
 	},
 	{
@@ -3435,7 +3720,8 @@
 			"Thailand",
 			"Vietnam",
 			"Brunei"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Sudan",
@@ -3452,7 +3738,8 @@
 			"United Arab Emirates",
 			"Palestine",
 			"Kenya"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Suriname",
@@ -3469,7 +3756,8 @@
 			"Panama",
 			"Trinidad and Tobago",
 			"Jamaica"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Eswatini",
@@ -3486,7 +3774,8 @@
 			"Mozambique",
 			"Angola",
 			"Kenya"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Sweden",
@@ -3502,7 +3791,8 @@
 			"Estonia",
 			"Slovakia",
 			"Ukraine"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Switzerland",
@@ -3518,6 +3808,10 @@
 			"England",
 			"Malta",
 			"Georgia"
+		],
+        "capital_distractors": [
+			"Zurich",
+			"Geneva"
 		]
 	},
 	{
@@ -3535,7 +3829,8 @@
 			"Palestine",
 			"Libya",
 			"Kuwait"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Taiwan",
@@ -3552,6 +3847,9 @@
 			"Malaysia",
 			"Singapore",
 			"Samoa"
+		],
+        "capital_distractors": [
+			"Taichung"
 		]
 	},
 	{
@@ -3569,7 +3867,8 @@
 			"Afghanistan",
 			"Armenia",
 			"Azerbaijan"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Tanzania",
@@ -3586,7 +3885,8 @@
 			"Zambia",
 			"Malawi",
 			"Botswana"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Thailand",
@@ -3603,7 +3903,8 @@
 			"Russia",
 			"Croatia",
 			"Taiwan"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Togo",
@@ -3620,7 +3921,8 @@
 			"Mali",
 			"Burkina Faso",
 			"Sao Tome and Principe"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Tokelau",
@@ -3636,7 +3938,8 @@
 			"Samoa",
 			"Tuvalu",
 			"Vanuatu"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Tonga",
@@ -3653,7 +3956,8 @@
 			"Samoa",
 			"New Zealand",
 			"Georgia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Trinidad and Tobago",
@@ -3670,7 +3974,8 @@
 			"Dominica",
 			"Saint Lucia",
 			"Guyana"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Tunisia",
@@ -3687,7 +3992,8 @@
 			"Comoros",
 			"Pakistan",
 			"Malaysia"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Turkiye",
@@ -3704,6 +4010,9 @@
 			"Libya",
 			"Egypt",
 			"Comoros"
+		],
+        "capital_distractors": [
+			"Istanbul"
 		]
 	},
 	{
@@ -3721,7 +4030,8 @@
 			"Iran",
 			"Pakistan",
 			"Azerbaijan"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Turks and Caicos Islands",
@@ -3738,7 +4048,8 @@
 			"Pitcairn Islands",
 			"Niue",
 			"British Indian Ocean Territory"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Tuvalu",
@@ -3755,7 +4066,8 @@
 			"Tokelau",
 			"Samoa",
 			"Vanuatu"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "US Virgin Islands",
@@ -3772,7 +4084,8 @@
 			"Puerto Rico",
 			"Guam",
 			"Northern Mariana Islands"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Uganda",
@@ -3789,7 +4102,8 @@
 			"Burundi",
 			"Rwanda",
 			"Republic of the Congo"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Ukraine",
@@ -3806,7 +4120,8 @@
 			"Hungary",
 			"Bulgaria",
 			"Finland"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "United Arab Emirates",
@@ -3823,6 +4138,9 @@
 			"South Sudan",
 			"Egypt",
 			"Palestine"
+		],
+        "capital_distractors": [
+			"Dubai"
 		]
 	},
 	{
@@ -3840,12 +4158,13 @@
 			"Jersey",
 			"Isle of Man",
 			"Wales"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "United States of America",
 		"code": "US",
-		"capital": "Washington",
+		"capital": "Washington D.C.",
 		"flag_image": "united_states_of_america.png",
 		"type": "nation",
 		"flag_distractors": [
@@ -3855,7 +4174,8 @@
 			"Netherlands",
 			"France",
 			"United Kingdom"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Uruguay",
@@ -3870,7 +4190,8 @@
 			"Chile",
 			"El Salvador",
 			"Costa Rica"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Uzbekistan",
@@ -3884,7 +4205,8 @@
 			"Kazakhstan",
 			"Afghanistan",
 			"Tajikistan"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Vanuatu",
@@ -3900,7 +4222,8 @@
 			"Palau",
 			"Papua New Guinea",
 			"Tonga"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Vatican City",
@@ -3913,7 +4236,8 @@
 			"San Marino",
 			"Malta",
 			"Liechtenstein"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Venezuela",
@@ -3928,7 +4252,8 @@
 			"Bolivia",
 			"Paraguay",
 			"Argentina"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Vietnam",
@@ -3945,6 +4270,9 @@
 			"Taiwan",
 			"Cambodia",
 			"Laos"
+		],
+        "capital_distractors": [
+			"Ho Chi Minh City"
 		]
 	},
 	{
@@ -3961,7 +4289,8 @@
 			"New Caledonia",
 			"Vanuatu",
 			"Reunion"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Western Sahara",
@@ -3976,7 +4305,8 @@
 			"Jordan",
 			"South Sudan",
 			"Mali"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Yemen",
@@ -3993,7 +4323,8 @@
 			"Iran",
 			"Sudan",
 			"Lebanon"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Zambia",
@@ -4009,7 +4340,8 @@
 			"South Africa",
 			"Djibouti",
 			"Kenya"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Zimbabwe",
@@ -4026,7 +4358,8 @@
 			"Tanzania",
 			"Malawi",
 			"Mozambique"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "Scotland",
@@ -4042,6 +4375,9 @@
 			"Isle of Man",
 			"Jersey",
 			"Guernsey"
+		],
+        "capital_distractors": [
+			"Glasgow"
 		]
 	},
 	{
@@ -4058,6 +4394,9 @@
 			"Isle of Man",
 			"Jersey",
 			"Guernsey"
+		],
+        "capital_distractors": [
+			"Swansea"
 		]
 	},
 	{
@@ -4075,7 +4414,8 @@
 			"Jersey",
 			"Guernsey",
 			"Scotland"
-		]
+		],
+        "capital_distractors": []
 	},
 	{
 		"name": "England",
@@ -4092,6 +4432,7 @@
 			"Jersey",
 			"Guernsey",
 			"Ireland"
-		]
+		],
+        "capital_distractors": []
 	}
 ]
