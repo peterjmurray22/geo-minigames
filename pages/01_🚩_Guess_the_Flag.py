@@ -3,20 +3,7 @@ import pathlib
 import utils
 
 def show_flag_question(round_data, multiple_choice=True):
-    answer = round_data["answer"]
-    st.session_state.correct = answer["name"]
-    flag_dir = pathlib.Path(__file__).resolve().parents[1] / "assets" / "flags"
-    flag_path = flag_dir / answer["flag_image"]
-    if flag_path.exists():
-        st.image(str(flag_path), width=450)
-    else:
-        st.warning(f"Flag image not found: {answer['flag_image']}")
-    if multiple_choice:
-        options = [c["name"] for c in round_data["options"]]
-        submitted = utils.show_multiple_choice_options("Which country does this flag belong to?", options)
-    else:
-        submitted = utils.show_text_entry("Which country does this flag belong to?")
-    return submitted
+    return utils.show_image_question(round_data, pathlib.Path(__file__).resolve().parents[1] / "assets" / "flags", "flag_image", "Which country does this flag belong to?", multiple_choice)
 
 # --- App ---
 st.title("🚩 Guess the Flag")

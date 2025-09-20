@@ -66,6 +66,21 @@ def setup_screen(countries):
         return pool, input, num_options, num_rounds
     return None, None, None, None
 
+def show_image_question(round_data, image_dir, image_key, question_text, multiple_choice=True):
+    answer = round_data["answer"]
+    st.session_state.correct = answer["name"]
+    image_path = image_dir / answer[image_key]
+    if image_path.exists():
+        st.image(str(image_path), width=450)
+    else:
+        st.warning(f"Image not found: {answer[image_key]}")
+    if multiple_choice:
+        options = [c["name"] for c in round_data["options"]]
+        submitted = show_multiple_choice_options(question_text, options)
+    else:
+        submitted = show_text_entry(question_text)
+    return submitted
+
 def update_score():
     st.session_state.score_display = f"{st.session_state.score} / {st.session_state.rounds} - {round(st.session_state.score/st.session_state.rounds * 100) if st.session_state.rounds > 0 else 0}%"
 
