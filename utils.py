@@ -56,6 +56,7 @@ def generate_round(pool, key_field: str, distractor_key: str, num_options: int =
 def setup_screen(countries):
     nations = st.checkbox("Nations", value=True)
     territories = st.checkbox("Territories", value=True)
+    us_states = st.checkbox("US States", value=False)
     input = st.radio("Input type", ["Multiple Choice", "Text Entry"], index=0, horizontal=True)
     num_options = None
     if input == "Multiple Choice":
@@ -66,12 +67,14 @@ def setup_screen(countries):
     st.session_state.rounds = 0
     update_score()
 
-    if st.button("Start Game", disabled=not nations and not territories):
+    if st.button("Start Game", disabled=not nations and not territories and not us_states):
         pool = []
         if nations:
             pool.extend([c for c in countries if c["type"] == "nation"])
         if territories:
             pool.extend([c for c in countries if c["type"] == "territory"])
+        if us_states:
+            pool.extend([c for c in countries if c["type"] == "us_state"])
         st.session_state.game_started = True
         return pool, input, num_options, num_rounds
     return None, None, None, None

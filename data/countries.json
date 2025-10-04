@@ -1696,7 +1696,7 @@
 	{
 		"name": "Grenada",
 		"code": "GD",
-		"capital": "St. George's",
+		"capital": "St George's",
 		"flag_image": "grenada.png",
 		"type": "nation",
 		"flag_distractors": [
@@ -5107,6 +5107,1033 @@
 			"Birmingham",
 			"Edinburgh",
 			"Dublin"
+		]
+	},
+	{
+		"name": "Alabama",
+		"code": "AL",
+		"capital": "Montgomery",
+		"flag_image": "alabama.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Texas",
+			"Florida",
+			"California",
+			"New York",
+			"Illinois",
+			"Ohio",
+			"Michigan",
+			"Pennsylvania",
+			"England"
+		],
+        "capital_distractors": [
+			"Birmingham",
+			"Mobile",
+			"Atlanta",
+			"Huntsville"
+		]
+	},
+	{
+		"name": "Alaska",
+		"code": "AK",
+		"capital": "Juneau",
+		"flag_image": "alaska.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"South Carolina",
+			"Florida",
+			"Hawaii"
+		],
+        "capital_distractors": [
+			"Anchorage",
+			"Fairbanks"
+		]
+	},
+	{
+		"name": "Arizona",
+		"code": "AZ",
+		"capital": "Phoenix",
+		"flag_image": "arizona.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"New Mexico",
+			"Nevada",
+			"Utah",
+			"Colorado"
+		],
+        "capital_distractors": [
+			"Tucson",
+			"Scottsdale",
+			"Albuquerque",
+			"Santa Fe"
+		]
+	},
+	{
+		"name": "Arkansas",
+		"code": "AR",
+		"capital": "Little Rock",
+		"flag_image": "arkansas_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Mississippi",
+			"Louisiana",
+			"Oklahoma",
+			"Tennessee",
+			"Texas"
+		],
+        "capital_distractors": [
+			"Fayetteville",
+			"Hot Springs",
+			"Jackson",
+			"Shreveport"
+		]
+	},
+	{
+		"name": "California",
+		"code": "CA",
+		"capital": "Sacramento",
+		"flag_image": "california_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Texas",
+			"Florida",
+			"New York",
+			"Illinois",
+			"Ohio",
+			"Michigan",
+			"Pennsylvania",
+			"Washington"
+		],
+        "capital_distractors": [
+			"Los Angeles",
+			"San Francisco",
+			"San Diego",
+			"San Jose"
+		]
+	},
+	{
+		"name": "Colorado",
+		"code": "CO",
+		"capital": "Denver",
+		"flag_image": "colorado.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Utah",
+			"Wyoming",
+			"Nebraska",
+			"Kansas",
+			"New Mexico"
+		],
+        "capital_distractors": [
+			"Colorado Springs",
+			"Aurora",
+			"Salt Lake City",
+			"Albuquerque"
+		]
+	},
+	{
+		"name": "Connecticut",
+		"code": "CT",
+		"capital": "Hartford",
+		"flag_image": "connecticut.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Rhode Island",
+			"Massachusetts",
+			"New York",
+			"New Jersey",
+			"Pennsylvania"
+		],
+        "capital_distractors": [
+			"New Haven",
+			"Bridgeport",
+			"Providence",
+			"Boston"
+		]
+	},
+	{
+		"name": "Delaware",
+		"code": "DE",
+		"capital": "Dover",
+		"flag_image": "delaware.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Maryland",
+			"Pennsylvania",
+			"New Jersey",
+			"Virginia"
+		],
+        "capital_distractors": [
+			"Wilmington",
+			"Philadelphia",
+			"Trenton",
+			"Annapolis"
+		]
+	},
+	{
+		"name": "Florida",
+		"code": "FL",
+		"capital": "Tallahassee",
+		"flag_image": "florida_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Texas",
+			"California",
+			"New York",
+			"Illinois",
+			"Ohio",
+			"Michigan",
+			"Pennsylvania",
+			"Georgia"
+		],
+        "capital_distractors": [
+			"Miami",
+			"Orlando",
+			"Tampa",
+			"Jacksonville"
+		]
+	},
+	{
+		"name": "Georgia",
+		"code": "GA",
+		"capital": "Atlanta",
+		"flag_image": "georgia_us.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Florida",
+			"South Carolina",
+			"North Carolina",
+			"Tennessee",
+			"Alabama"
+		],
+        "capital_distractors": [
+			"Savannah",
+			"Athens",
+			"Charlotte",
+			"Nashville"
+		]
+	},
+	{
+		"name": "Hawaii",
+		"code": "HI",
+		"capital": "Honolulu",
+		"flag_image": "hawaii.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Alaska",
+			"California",
+			"Florida",
+			"Texas"
+		],
+        "capital_distractors": [
+			"Maui",
+			"Big Island",
+			"Juneau",
+			"Los Angeles"
+		]
+	},
+	{
+		"name": "Idaho",
+		"code": "ID",
+		"capital": "Boise",
+		"flag_image": "idaho_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Montana",
+			"Wyoming",
+			"Utah",
+			"Nevada",
+			"Oregon",
+			"Washington"
+		],
+        "capital_distractors": [
+			"Spokane",
+			"Salt Lake City",
+			"Helena",
+			"Cheyenne",
+			"Idaho City"
+		]
+	},
+	{
+		"name": "Illinois",
+		"code": "IL",
+		"capital": "Springfield",
+		"flag_image": "illinois_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Texas",
+			"Florida",
+			"California",
+			"New York",
+			"Ohio",
+			"Michigan",
+			"Wisconsin",
+			"Pennsylvania"
+		],
+        "capital_distractors": [
+			"Chicago",
+			"Peoria",
+			"Cleveland",
+			"Detroit"
+		]
+	},
+	{
+		"name": "Indiana",
+		"code": "IN",
+		"capital": "Indianapolis",
+		"flag_image": "indiana.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Ohio",
+			"Michigan",
+			"Illinois",
+			"Kentucky"
+		],
+        "capital_distractors": [
+			"Fort Wayne",
+			"South Bend",
+			"Cleveland",
+			"Chicago"
+		]
+	},
+	{
+		"name": "Iowa",
+		"code": "IA",
+		"capital": "Des Moines",
+		"flag_image": "iowa_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Nebraska",
+			"Missouri",
+			"Illinois",
+			"Minnesota",
+			"Wisconsin",
+			"South Dakota"
+		],
+        "capital_distractors": [
+			"Cedar Rapids",
+			"Sioux City",
+			"St Paul",
+			"Iowa City",
+			"Dubuque"
+		]
+	},
+	{
+		"name": "Kansas",
+		"code": "KS",
+		"capital": "Topeka",
+		"flag_image": "kansas_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Nebraska",
+			"Oklahoma",
+			"Missouri",
+			"Colorado"
+		],
+        "capital_distractors": [
+			"Wichita",
+			"Overland Park",
+			"Omaha",
+			"St Louis",
+			"Kansas City"
+		]
+	},
+	{
+		"name": "Kentucky",
+		"code": "KY",
+		"capital": "Frankfort",
+		"flag_image": "kentucky_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Indiana",
+			"Ohio",
+			"Tennessee",
+			"Virginia",
+			"West Virginia"
+		],
+        "capital_distractors": [
+			"Louisville",
+			"Lexington",
+			"Cincinnati",
+			"Columbus"
+		]
+	},
+	{
+		"name": "Louisiana",
+		"code": "LA",
+		"capital": "Baton Rouge",
+		"flag_image": "louisiana.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Texas",
+			"Arkansas",
+			"Mississippi",
+			"Alabama"
+		],
+        "capital_distractors": [
+			"New Orleans",
+			"Lafayette",
+			"Jackson",
+			"Shreveport"
+		]
+	},
+	{
+		"name": "Maine",
+		"code": "ME",
+		"capital": "Augusta",
+		"flag_image": "maine_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"New Hampshire",
+			"Vermont",
+			"Massachusetts",
+			"Rhode Island"
+		],
+        "capital_distractors": [
+			"Portland",
+			"Bangor",
+			"Concord",
+			"Montpelier",
+			"Albany"
+		]
+	},
+	{
+		"name": "Maryland",
+		"code": "MD",
+		"capital": "Annapolis",
+		"flag_image": "maryland.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Pennsylvania",
+			"Delaware",
+			"Virginia",
+			"West Virginia"
+		],
+        "capital_distractors": [
+			"Baltimore",
+			"Philadelphia",
+			"Wilmington",
+			"Richmond"
+		]
+	},
+	{
+		"name": "Massachusetts",
+		"code": "MA",
+		"capital": "Boston",
+		"flag_image": "massachusetts.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Rhode Island",
+			"Connecticut",
+			"New York",
+			"New Jersey",
+			"Pennsylvania"
+		],
+        "capital_distractors": [
+			"Worcester",
+			"Springfield",
+			"Providence",
+			"New Haven"
+		]
+	},
+	{
+		"name": "Michigan",
+		"code": "MI",
+		"capital": "Lansing",
+		"flag_image": "michigan.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Ohio",
+			"Indiana",
+			"Wisconsin",
+			"Minnesota",
+			"Illinois",
+			"Pennsylvania"
+		],
+        "capital_distractors": [
+			"Detroit",
+			"Grand Rapids",
+			"Novi",
+			"Roseville"
+		]
+	},
+	{
+		"name": "Minnesota",
+		"code": "MN",
+		"capital": "St Paul",
+		"flag_image": "minnesota.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Wisconsin",
+			"Iowa",
+			"North Dakota",
+			"South Dakota",
+			"Nebraska"
+		],
+        "capital_distractors": [
+			"Minnesota City",
+			"Rochester",
+			"Madison",
+			"Des Moines",
+			"Duluth",
+			"Minneapolis"
+		]
+	},
+	{
+		"name": "Mississippi",
+		"code": "MS",
+		"capital": "Jackson",
+		"flag_image": "mississippi.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Louisiana",
+			"Arkansas",
+			"Tennessee",
+			"Alabama"
+		],
+        "capital_distractors": [
+			"Memphis",
+			"Birmingham",
+			"New Orleans",
+			"Little Rock",
+			"Biloxi"
+		]
+	},
+	{
+		"name": "Missouri",
+		"code": "MO",
+		"capital": "Jefferson City",
+		"flag_image": "missouri.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Kansas",
+			"Nebraska",
+			"Iowa",
+			"Illinois",
+			"Kentucky",
+			"Tennessee",
+			"Arkansas",
+			"Oklahoma"
+		],
+        "capital_distractors": [
+			"St Louis",
+			"Kansas City",
+			"Omaha",
+			"Des Moines",
+			"Springfield"
+		]
+	},
+	{
+		"name": "Montana",
+		"code": "MT",
+		"capital": "Helena",
+		"flag_image": "montana_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Idaho",
+			"Wyoming",
+			"South Dakota",
+			"North Dakota"
+		],
+        "capital_distractors": [
+			"Billings",
+			"Cheyenne",
+			"Rapid City",
+			"Bismarck",
+			"Bozeman"
+		]
+	},
+	{
+		"name": "Nebraska",
+		"code": "NE",
+		"capital": "Lincoln",
+		"flag_image": "nebraska_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Kansas",
+			"Missouri",
+			"Iowa",
+			"South Dakota",
+			"Wyoming",
+			"Colorado"
+		],
+        "capital_distractors": [
+			"Omaha",
+			"Grand Island",
+			"Sioux City",
+			"St Louis",
+			"Cheyenne"
+		]
+	},
+	{
+		"name": "Nevada",
+		"code": "NV",
+		"capital": "Carson City",
+		"flag_image": "nevada_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Utah",
+			"Arizona",
+			"California",
+			"Oregon",
+			"Idaho"
+		],
+        "capital_distractors": [
+			"Las Vegas",
+			"Reno",
+			"Salt Lake City",
+			"Phoenix"
+		]
+	},
+	{
+		"name": "New Hampshire",
+		"code": "NH",
+		"capital": "Concord",
+		"flag_image": "new_hampshire_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Maine",
+			"Vermont",
+			"Massachusetts",
+			"Rhode Island"
+		],
+        "capital_distractors": [
+			"Manchester",
+			"Portland",
+			"Montpelier",
+			"Boston",
+			"Albany"
+		]
+	},
+	{
+		"name": "New Jersey",
+		"code": "NJ",
+		"capital": "Trenton",
+		"flag_image": "new_jersey.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"New York",
+			"Pennsylvania",
+			"Delaware",
+			"Connecticut"
+		],
+        "capital_distractors": [
+			"Newark",
+			"Jersey City",
+			"Philadelphia",
+			"Somerset"
+		]
+	},
+	{
+		"name": "New Mexico",
+		"code": "NM",
+		"capital": "Santa Fe",
+		"flag_image": "new_mexico.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Arizona",
+			"Utah",
+			"Colorado",
+			"Texas",
+			"Oklahoma"
+		],
+        "capital_distractors": [
+			"Albuquerque",
+			"Phoenix",
+			"Denver",
+			"Oklahoma City",
+			"El Paso"
+		]
+	},
+	{
+		"name": "New York",
+		"code": "NY",
+		"capital": "Albany",
+		"flag_image": "new_york.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"New Jersey",
+			"Pennsylvania",
+			"Connecticut",
+			"Massachusetts",
+			"Vermont"
+		],
+        "capital_distractors": [
+			"New York City",
+			"Buffalo",
+			"Rochester",
+			"Syracuse",
+			"Yonkers"
+		]
+	},
+	{
+		"name": "North Carolina",
+		"code": "NC",
+		"capital": "Raleigh",
+		"flag_image": "north_carolina_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"South Carolina",
+			"Virginia",
+			"Tennessee",
+			"Georgia"
+		],
+        "capital_distractors": [
+			"Charlotte",
+			"Greensboro",
+			"Columbia",
+			"Richmond",
+			"Atlanta"
+		]
+	},
+	{
+		"name": "North Dakota",
+		"code": "ND",
+		"capital": "Bismarck",
+		"flag_image": "north_dakota_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"South Dakota",
+			"Minnesota",
+			"Montana",
+			"Wisconsin"
+		],
+        "capital_distractors": [
+			"Fargo",
+			"Sioux Falls",
+			"Helena",
+			"Madison",
+			"Grand Forks"
+		]
+	},
+	{
+		"name": "Ohio",
+		"code": "OH",
+		"capital": "Columbus",
+		"flag_image": "ohio.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Pennsylvania",
+			"West Virginia",
+			"Kentucky",
+			"Indiana",
+			"Michigan"
+		],
+        "capital_distractors": [
+			"Cleveland",
+			"Cincinnati",
+			"Columbia",
+			"Toledo"
+		]
+	},
+	{
+		"name": "Oklahoma",
+		"code": "OK",
+		"capital": "Oklahoma City",
+		"flag_image": "oklahoma_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Texas",
+			"Kansas",
+			"Missouri",
+			"Arkansas",
+			"New Mexico"
+		],
+        "capital_distractors": [
+			"Tulsa",
+			"Wichita",
+			"Kansas City",
+			"Little Rock"
+		]
+	},
+	{
+		"name": "Oregon",
+		"code": "OR",
+		"capital": "Salem",
+		"flag_image": "oregon_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Washington",
+			"Idaho",
+			"Nevada",
+			"California"
+		],
+        "capital_distractors": [
+			"Portland",
+			"Eugene",
+			"Spokane",
+			"Reno"
+		]
+	},
+	{
+		"name": "Pennsylvania",
+		"code": "PA",
+		"capital": "Harrisburg",
+		"flag_image": "pennsylvania.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"New York",
+			"New Jersey",
+			"Delaware",
+			"Maryland",
+			"Ohio"
+		],
+        "capital_distractors": [
+			"Philadelphia",
+			"Pittsburgh",
+			"Columbus",
+			"Trenton",
+			"Allentown",
+			"Jenkintown"
+		]
+	},
+	{
+		"name": "Rhode Island",
+		"code": "RI",
+		"capital": "Providence",
+		"flag_image": "rhode_island.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Connecticut",
+			"Massachusetts",
+			"New York",
+			"New Jersey",
+			"Pennsylvania"
+		],
+        "capital_distractors": [
+			"New Haven",
+			"Boston",
+			"Bridgeport",
+			"Springfield"
+		]
+	},
+	{
+		"name": "South Carolina",
+		"code": "SC",
+		"capital": "Columbia",
+		"flag_image": "south_carolina.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"North Carolina",
+			"Georgia",
+			"Florida"
+		],
+        "capital_distractors": [
+			"Charleston",
+			"Charlotte",
+			"Raleigh",
+			"Atlanta"
+		]
+	},
+	{
+		"name": "South Dakota",
+		"code": "SD",
+		"capital": "Pierre",
+		"flag_image": "south_dakota_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"North Dakota",
+			"Minnesota",
+			"Nebraska",
+			"Wyoming",
+			"Montana"
+		],
+        "capital_distractors": [
+			"Sioux Falls",
+			"Fargo",
+			"Omaha",
+			"Helena",
+			"Bismarck"
+		]
+	},
+	{
+		"name": "Tennessee",
+		"code": "TN",
+		"capital": "Nashville",
+		"flag_image": "tennessee.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Kentucky",
+			"Virginia",
+			"North Carolina",
+			"Georgia",
+			"Alabama",
+			"Mississippi",
+			"Arkansas",
+			"Missouri"
+		],
+        "capital_distractors": [
+			"Memphis",
+			"Knoxville",
+			"Louisville",
+			"Charlotte",
+			"Chattanooga"
+		]
+	},
+	{
+		"name": "Texas",
+		"code": "TX",
+		"capital": "Austin",
+		"flag_image": "texas.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Chile",
+			"Puerto Rico",
+			"New York",
+			"Illinois",
+			"Ohio",
+			"Michigan",
+			"Pennsylvania",
+			"Arizona"
+		],
+        "capital_distractors": [
+			"Houston",
+			"Dallas",
+			"San Antonio",
+			"El Paso"
+		]
+	},
+	{
+		"name": "Utah",
+		"code": "UT",
+		"capital": "Salt Lake City",
+		"flag_image": "utah.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Nevada",
+			"Arizona",
+			"Colorado",
+			"Idaho"
+		],
+        "capital_distractors": [
+			"Provo",
+			"Ogden",
+			"Reno",
+			"Denver",
+			"Phoenix"
+		]
+	},
+	{
+		"name": "Vermont",
+		"code": "VT",
+		"capital": "Montpelier",
+		"flag_image": "vermont_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Maine",
+			"New Hampshire",
+			"Massachusetts",
+			"New York"
+		],
+        "capital_distractors": [
+			"Burlington",
+			"Portland",
+			"Concord",
+			"Albany",
+			"Boston"
+		]
+	},
+	{
+		"name": "Virginia",
+		"code": "VA",
+		"capital": "Richmond",
+		"flag_image": "virginia_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"North Carolina",
+			"Tennessee",
+			"Kentucky",
+			"West Virginia",
+			"Maryland"
+		],
+        "capital_distractors": [
+			"Virginia Beach",
+			"Norfolk",
+			"Charlotte",
+			"Charlottesville",
+			"Columbia"
+		]
+	},
+	{
+		"name": "Washington",
+		"code": "WA",
+		"capital": "Olympia",
+		"flag_image": "washington_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Oregon",
+			"Idaho",
+			"Montana",
+			"California"
+		],
+        "capital_distractors": [
+			"Seattle",
+			"Spokane",
+			"Portland",
+			"Boise"
+		]
+	},
+	{
+		"name": "West Virginia",
+		"code": "WV",
+		"capital": "Charleston",
+		"flag_image": "west_virginia_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Virginia",
+			"Ohio",
+			"Pennsylvania",
+			"Maryland",
+			"Kentucky"
+		],
+        "capital_distractors": [
+			"Columbus",
+			"Pittsburgh",
+			"Richmond",
+			"Annapolis",
+			"Columbia"
+		]
+	},
+	{
+		"name": "Wisconsin",
+		"code": "WI",
+		"capital": "Madison",
+		"flag_image": "wisconsin_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Minnesota",
+			"Iowa",
+			"Illinois",
+			"Michigan"
+		],
+        "capital_distractors": [
+			"Milwaukee",
+			"Green Bay",
+			"Des Moines",
+			"Chicago",
+			"Racine"
+		]
+	},
+	{
+		"name": "Wyoming",
+		"code": "WY",
+		"capital": "Cheyenne",
+		"flag_image": "wyoming_censored.png",
+		"type": "us_state",
+		"flag_distractors": [
+			"Montana",
+			"South Dakota",
+			"Nebraska",
+			"Colorado",
+			"Utah",
+			"Idaho"
+		],
+        "capital_distractors": [
+			"Billings",
+			"Rapid City",
+			"Omaha",
+			"Laramie",
+			"Boise"
 		]
 	}
 ]
