@@ -5381,7 +5381,7 @@
 		"name": "Indiana",
 		"code": "IN",
 		"capital": "Indianapolis",
-		"flag_image": "indiana.png",
+		"flag_image": "indiana_censored.png",
 		"type": "us_state",
 		"flag_distractors": [
 			"Ohio",
