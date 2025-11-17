@@ -1820,7 +1820,7 @@
 		"name": "Guinea-Bissau",
 		"code": "GW",
 		"capital": "Bissau",
-		"flag_image": "guineabissau.png",
+		"flag_image": "guinea-bissau.png",
 		"type": "nation",
 		"flag_distractors": [
 			"Guinea",
