@@ -1,6 +1,6 @@
-
 import streamlit as st
 import utils
+import session
 
 def show_capital_question(round_data, multiple_choice=True):
     answer = round_data["answer"]
@@ -14,6 +14,7 @@ def show_capital_question(round_data, multiple_choice=True):
 
 # --- App ---
 st.title("🗺️ Guess the Capital")
+session.setup_multiplayer_session()
 
 utils.init_game("captials")
 

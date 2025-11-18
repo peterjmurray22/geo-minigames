@@ -1,12 +1,14 @@
 import streamlit as st
 import pathlib
 import utils
+import session
 
 def show_flag_question(round_data, multiple_choice=True):
     return utils.show_image_question(round_data, pathlib.Path(__file__).resolve().parents[1] / "assets" / "flags", "flag_image", "Which country does this flag belong to?", multiple_choice)
 
 # --- App ---
 st.title("🚩 Guess the Flag")
+session.setup_multiplayer_session()
 
 utils.init_game("flags")
 

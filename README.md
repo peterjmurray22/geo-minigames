@@ -15,7 +15,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # 3) Run the app
-streamlit run app.py
+streamlit run Welcome.py
 ```
 
 The sidebar will show available minigames (pages).
