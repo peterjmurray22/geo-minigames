@@ -84,7 +84,8 @@ def show_image_question(round_data, image_dir, image_key, question_text, multipl
     st.session_state.correct = answer["name"]
     image_path = image_dir / answer[image_key]
     if image_path.exists():
-        st.image(str(image_path), width=450)
+        with st.container(border=True, width=450):
+            st.image(str(image_path), width=450)
     else:
         st.warning(f"Image not found: {answer[image_key]}")
     if multiple_choice:
