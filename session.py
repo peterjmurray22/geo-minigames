@@ -9,9 +9,11 @@ import json
 RECENT_EVENTS_KEY = "recent_events"
 RECENT_EVENTS_LIMIT = 10
 HEARTBEAT_TIMEOUT = 600  # seconds
+EVENT_TTL = 300  # seconds
 
 def push_event(event):
     r = get_redis_connection()
+    event.update({"timestamp": int(time.time())})
     r.lpush(RECENT_EVENTS_KEY, json.dumps(event))
     r.ltrim(RECENT_EVENTS_KEY, 0, RECENT_EVENTS_LIMIT - 1)
 
@@ -77,13 +79,13 @@ def show_recent_events(r, uid):
         if e_json in st.session_state.seen_events:
             continue
         data = json.loads(e_json)
-        # Ignore self events
-        if data.get("uid") == uid:
+        # Ignore self events and old events
+        if data.get("uid") == uid or data.get("timestamp") < time.time() - EVENT_TTL:
             continue
         st.session_state.seen_events.add(e_json)
 
         # Show toast notification
         if data["event"] == "player_joined":
-            st.toast(f"{data['name']} joined the game!", icon="🎉")
+            st.toast(f"{data['name']} logged in!", icon="🎉")
         elif data["event"] == "player_left":
-            st.toast(f"{data['name']} left the game.", icon="⚠️")
+            st.toast(f"{data['name']} left.", icon="⚠️")
