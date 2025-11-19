@@ -3,6 +3,7 @@ import random
 import time
 import json
 import pathlib
+import multiplayer_game as mg
 
 @st.cache_data
 def load_countries():
@@ -54,29 +55,59 @@ def generate_round(pool, key_field: str, distractor_key: str, num_options: int =
     }, remaining
 
 def setup_screen(countries):
-    nations = st.checkbox("Nations", value=True)
-    territories = st.checkbox("Territories", value=True)
-    us_states = st.checkbox("US States", value=False)
-    input = st.radio("Input type", ["Multiple Choice", "Text Entry"], index=0, horizontal=True)
-    num_options = None
-    if input == "Multiple Choice":
-        num_options = st.slider("Number of choices", 2, 10, 4)
-    num_rounds = st.slider("Number of rounds", 1, 50, 10)
+    col1, col2 = st.columns([2, 1])
+    with col1:  # game settings
+        st.subheader("Game Settings")
+        nations = st.checkbox("Nations", value=True)
+        territories = st.checkbox("Territories", value=False)
+        us_states = st.checkbox("US States", value=False)
+        input = st.radio("Input type", ["Multiple Choice", "Text Entry"], index=0, horizontal=True)
+        num_options = None
+        if input == "Multiple Choice":
+            num_options = st.slider("Number of choices", 2, 10, 4)
+        num_rounds = st.slider("Number of rounds", 1, 50, 10)
 
-    st.session_state.score = 0
-    st.session_state.rounds = 0
-    update_score()
+        st.session_state.score = 0
+        st.session_state.rounds = 0
+        update_score()
 
-    if st.button("Start Game", disabled=not nations and not territories and not us_states):
-        pool = []
-        if nations:
-            pool.extend([c for c in countries if c["type"] == "nation"])
-        if territories:
-            pool.extend([c for c in countries if c["type"] == "territory"])
-        if us_states:
-            pool.extend([c for c in countries if c["type"] == "us_state"])
-        st.session_state.game_started = True
-        return pool, input, num_options, num_rounds
+        if st.button("Start Game", disabled=not nations and not territories and not us_states):
+            pool = []
+            if nations:
+                pool.extend([c for c in countries if c["type"] == "nation"])
+            if territories:
+                pool.extend([c for c in countries if c["type"] == "territory"])
+            if us_states:
+                pool.extend([c for c in countries if c["type"] == "us_state"])
+            st.session_state.game_started = True
+            return pool, input, num_options, num_rounds
+        elif st.button("Create Multiplayer Lobby", disabled=not nations and not territories and not us_states):
+            sets = []
+            if nations:
+                sets.append("nations")
+            if territories:
+                sets.append("territories")
+            if us_states:
+                sets.append("us_states")
+            options = {
+                "sets": sets,
+                "input": input,
+                "num_options": num_options,
+                "num_rounds": num_rounds
+            }
+            mg.create_game(st.session_state.uid, st.session_state.username, options)
+            return None, None, None, None
+    with col2:  # multiplayer lobbies
+        st.subheader("Join Lobby")
+        lobbies = mg.list_lobbies()
+        for lobby in lobbies:
+            if lobby['game_mode'] != st.session_state.current_game:
+                continue
+            if st.button(f"Join {lobby['host_name']}'s game", key=f"join_{lobby['game_id']}"):
+                mg.join_game(lobby["game_id"], st.session_state.uid, st.session_state.username)
+                st.session_state.current_game_id = lobby["game_id"]
+                st.rerun()
+
     return None, None, None, None
 
 def show_image_question(round_data, image_dir, image_key, question_text, multiple_choice=True):

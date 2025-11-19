@@ -67,6 +67,13 @@ def heartbeat():
     for user_id, last_active in r.hgetall("last_active").items():
         if int(time.time()) - int(last_active) > HEARTBEAT_TIMEOUT:
             push_event({"event": "player_left", "uid": user_id, "name": r.hget(f"user:{user_id}", "name")})
+            # Cleanup games hosted by user
+            for game_key in r.keys("game:*"):
+                if r.hget(game_key, "host") == user_id:
+                    r.delete(game_key)
+                    r.delete(f"{game_key}:players")
+                    r.delete(f"{game_key}:round")
+                    r.delete(f"{game_key}:answers")
             r.delete(f"user:{user_id}")
             r.hdel("last_active", user_id)
 
@@ -84,8 +91,10 @@ def show_recent_events(r, uid):
             continue
         st.session_state.seen_events.add(e_json)
 
-        # Show toast notification
+        # Event handlers
         if data["event"] == "player_joined":
             st.toast(f"{data['name']} logged in!", icon="🎉")
         elif data["event"] == "player_left":
             st.toast(f"{data['name']} left.", icon="⚠️")
+        elif data["event"] == "game_created":
+            st.toast(f"Game lobby for {data['game_mode']} created by {data['host_name']}.", icon="🕹️")
