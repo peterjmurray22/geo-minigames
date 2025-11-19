@@ -13,6 +13,12 @@ source .venv/bin/activate
 
 # 2) Install dependencies
 pip install -r requirements.txt
+brew install redis
+brew services start redis
+mkdir .streamlit
+touch .streamlit/secrets.toml
+touch .env # (add export ENV=redis-local)
+source .env
 
 # 3) Run the app
 streamlit run Welcome.py
