@@ -21,7 +21,7 @@ touch .env # (add export ENV=redis-local)
 source .env
 
 # 3) Run the app
-streamlit run Welcome.py
+streamlit run app.py
 ```
 
 The sidebar will show available minigames (pages).
