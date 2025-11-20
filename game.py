@@ -114,7 +114,9 @@ def show_image_question(round_data, image_dir, image_key, question_text, multipl
     answer = round_data["answer"]
     st.session_state.correct = answer["name"]
     image_path = image_dir / answer[image_key]
-    if image_path.exists():
+    if not answer[image_key]:
+        st.warning(f"No image specified for {answer["name"]}")
+    elif image_path.exists():
         with st.container(border=True, width=450):
             st.image(str(image_path), width=450)
     else:
