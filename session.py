@@ -98,3 +98,5 @@ def show_recent_events(r, uid):
             st.toast(f"{data['name']} left.", icon="⚠️")
         elif data["event"] == "game_created":
             st.toast(f"Game lobby for {data['game_mode']} created by {data['host_name']}.", icon="🕹️")
+        elif data["event"] == "game_started":
+            st.toast(f"Game started!", icon="🚀")

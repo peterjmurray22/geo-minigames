@@ -1,6 +1,7 @@
 import streamlit as st
 import game
 import pathlib
+import session
 
 def show_country_question(round_data, multiple_choice=True):
     return game.show_image_question(round_data, pathlib.Path(__file__).resolve().parents[1] / "assets" / "silhouettes", "silhouette", "Which country is this?", multiple_choice)
@@ -8,6 +9,7 @@ def show_country_question(round_data, multiple_choice=True):
 
 # --- App ---
 st.title("🌎️ Guess the Country")
+session.setup_multiplayer_session()
 
 game.init_game("Guess the Country")
 

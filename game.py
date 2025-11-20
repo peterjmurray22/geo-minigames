@@ -4,6 +4,7 @@ import time
 import json
 import pathlib
 import multiplayer_game as mg
+from streamlit_autorefresh import st_autorefresh
 
 @st.cache_data
 def load_countries():
@@ -11,7 +12,7 @@ def load_countries():
     with open(data_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-def generate_round(pool, key_field: str, distractor_key: str, num_options: int = 4, verify_distractors=True):
+def generate_round(pool, key_field: str, distractor_key: str, num_options: int = 4, verify_distractors=True, publish_to_game_id: str = None):
     if not pool:
         return None
 
@@ -47,7 +48,12 @@ def generate_round(pool, key_field: str, distractor_key: str, num_options: int =
             extend_list = [a[key_field] for a in remaining if a[key_field] not in distractors and a["name"] != answer["name"]]
             distractors.extend(random.sample(extend_list, k=(min(num_options - 1, len(remaining)) - len(distractors))))
         options = distractors + [answer[key_field]]
-
+    if publish_to_game_id:
+        mg.publish_round(publish_to_game_id, {
+            "answer": answer,
+            "options": options,
+            "key_field": key_field,
+        })
     return {
         "answer": answer,
         "options": options,
@@ -56,22 +62,23 @@ def generate_round(pool, key_field: str, distractor_key: str, num_options: int =
 
 def setup_screen(countries):
     col1, col2 = st.columns([2, 1])
+    game_id = None
     with col1:  # game settings
         st.subheader("Game Settings")
-        nations = st.checkbox("Nations", value=True)
-        territories = st.checkbox("Territories", value=False)
-        us_states = st.checkbox("US States", value=False)
-        input = st.radio("Input type", ["Multiple Choice", "Text Entry"], index=0, horizontal=True)
+        nations = st.checkbox("Nations", value=True, disabled="current_game_id" in st.session_state)
+        territories = st.checkbox("Territories", value=False, disabled="current_game_id" in st.session_state)
+        us_states = st.checkbox("US States", value=False, disabled="current_game_id" in st.session_state)
+        input = st.radio("Input type", ["Multiple Choice", "Text Entry"], index=0, horizontal=True, disabled="current_game_id" in st.session_state)
         num_options = None
         if input == "Multiple Choice":
-            num_options = st.slider("Number of choices", 2, 10, 4)
-        num_rounds = st.slider("Number of rounds", 1, 50, 10)
+            num_options = st.slider("Number of choices", 2, 10, 4, disabled="current_game_id" in st.session_state)
+        num_rounds = st.slider("Number of rounds", 1, 50, 10, disabled="current_game_id" in st.session_state)
 
         st.session_state.score = 0
         st.session_state.rounds = 0
         update_score()
 
-        if st.button("Start Game", disabled=not nations and not territories and not us_states):
+        if st.button("Start Singleplayer Game", disabled="current_game_id" in st.session_state or (not nations and not territories and not us_states)):
             pool = []
             if nations:
                 pool.extend([c for c in countries if c["type"] == "nation"])
@@ -80,23 +87,34 @@ def setup_screen(countries):
             if us_states:
                 pool.extend([c for c in countries if c["type"] == "us_state"])
             st.session_state.game_started = True
-            return pool, input, num_options, num_rounds
-        elif st.button("Create Multiplayer Lobby", disabled=not nations and not territories and not us_states):
-            sets = []
+            st.session_state.pool = pool
+            st.session_state.input = input
+            st.session_state.num_options = num_options
+            st.session_state.num_rounds = num_rounds
+            st.rerun()
+
+        elif st.button("Create Multiplayer Lobby", disabled="current_game_id" in st.session_state or (not nations and not territories and not us_states)):
+            pool = []
             if nations:
-                sets.append("nations")
+                pool.extend([c for c in countries if c["type"] == "nation"])
             if territories:
-                sets.append("territories")
+                pool.extend([c for c in countries if c["type"] == "territory"])
             if us_states:
-                sets.append("us_states")
+                pool.extend([c for c in countries if c["type"] == "us_state"])
             options = {
-                "sets": sets,
+                "pool": pool,
                 "input": input,
                 "num_options": num_options,
                 "num_rounds": num_rounds
             }
-            mg.create_game(st.session_state.uid, st.session_state.username, options)
-            return None, None, None, None
+            game_id = mg.create_game(st.session_state.uid, st.session_state.username, options)
+            st.session_state.current_game_id = game_id
+            st.session_state.pool = pool
+            st.session_state.input = input
+            st.session_state.num_options = num_options
+            st.session_state.num_rounds = num_rounds
+            st.rerun()
+
     with col2:  # multiplayer lobbies
         st.subheader("Join Lobby")
         lobbies = mg.list_lobbies()
@@ -107,8 +125,6 @@ def setup_screen(countries):
                 mg.join_game(lobby["game_id"], st.session_state.uid, st.session_state.username)
                 st.session_state.current_game_id = lobby["game_id"]
                 st.rerun()
-
-    return None, None, None, None
 
 def show_image_question(round_data, image_dir, image_key, question_text, multiple_choice=True):
     answer = round_data["answer"]
@@ -156,7 +172,7 @@ def submit_answer():
 
 def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_question_fn, verify_distractors=True):
     if "round" not in st.session_state:
-        round_data, pool = generate_round(pool, key_field, distractor_key, num_options, verify_distractors)
+        round_data, pool = generate_round(pool, key_field, distractor_key, num_options, verify_distractors, publish_to_game_id=st.session_state.get("current_game_id") if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) == st.session_state.uid else None)
         st.session_state.round = round_data
         st.session_state.pool = pool
 
@@ -173,7 +189,7 @@ def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_ques
 
         update_score()
         if st.session_state.rounds < num_rounds and st.session_state.pool:
-            round_data, pool = generate_round(st.session_state.pool, key_field, distractor_key, num_options, verify_distractors)
+            round_data, pool = generate_round(st.session_state.pool, key_field, distractor_key, num_options, verify_distractors, publish_to_game_id=st.session_state.get("current_game_id") if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) == st.session_state.uid else None)
             st.session_state.round = round_data
             st.session_state.pool = pool
         else:
@@ -201,3 +217,10 @@ def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_ques
             if key in st.session_state:
                 del st.session_state[key]
         st.rerun()
+
+def conditional_autorefresh():
+    if "auto_refresh" not in st.session_state:
+        st.session_state.auto_refresh = False
+
+    if st.session_state.auto_refresh:
+        st_autorefresh(interval=1500, key="page_refresh")

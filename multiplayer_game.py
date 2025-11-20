@@ -26,8 +26,9 @@ def create_game(host_uid: str, host_name: str, options: Dict[str, Any]) -> str:
     })
     # add host to players hash
     r.hset(GAME_PLAYERS.format(game_id=game_id), host_uid, json.dumps({
-        "name": host_name, "ready": False, "score": 0
+        "name": host_name, "score": 0
     }))
+    st.session_state.auto_refresh = True
     session.push_event({"event": "game_created", "game_mode": st.session_state.current_game, "game_id": game_id, "host_uid": host_uid, "host_name": host_name})
     return game_id
 
@@ -62,31 +63,12 @@ def list_lobbies() -> List[Dict[str, Any]]:
 
 def join_game(game_id: str, uid: str, name: str) -> None:
     r = session.get_redis_connection()
-    r.hset(GAME_PLAYERS.format(game_id=game_id), uid, json.dumps({"name": name, "ready": False, "score": 0}))
+    r.hset(GAME_PLAYERS.format(game_id=game_id), uid, json.dumps({"name": name, "score": 0}))
     session.push_event({"event": "player_joined_lobby", "game_id": game_id, "uid": uid, "name": name})
-
-def set_ready(game_id: str, uid: str, ready: bool) -> None:
-    r = session.get_redis_connection()
-    p_raw = r.hget(GAME_PLAYERS.format(game_id=game_id), uid)
-    if not p_raw:
-        return
-    p = json.loads(p_raw)
-    p["ready"] = bool(ready)
-    r.hset(GAME_PLAYERS.format(game_id=game_id), uid, json.dumps(p))
-    session.push_event({"event": "player_ready", "game_id": game_id, "uid": uid, "ready": p["ready"]})
-
-def all_ready(game_id: str) -> bool:
-    r = session.get_redis_connection()
-    players = r.hgetall(GAME_PLAYERS.format(game_id=game_id))
-    if not players:
-        return False
-    for v in players.values():
-        if not json.loads(v).get("ready"):
-            return False
-    return True
+    st.session_state.auto_refresh = True
+    st.rerun()
 
 def start_game(game_id: str, host_uid: str, initial_pool: list, num_options:int, num_rounds:int) -> None:
-    """Host initializes shared game state and marks game in-progress."""
     r = session.get_redis_connection()
     key = GAME_KEY.format(game_id=game_id)
     current_host = r.hget(key, "host")
@@ -107,12 +89,10 @@ def start_game(game_id: str, host_uid: str, initial_pool: list, num_options:int,
     session.push_event({"event": "game_started", "game_id": game_id})
 
 def publish_round(game_id: str, round_data: dict) -> None:
-    """Host publishes a new round (round_data is JSON-serializable) — all clients read GAME_ROUND."""
     r = session.get_redis_connection()
     r.set(GAME_ROUND.format(game_id=game_id), json.dumps(round_data))
     # clear previous answers for this round
     r.delete(GAME_ANSWERS.format(game_id=game_id))
-    session.push_event({"event": "round_published", "game_id": game_id})
 
 def submit_answer(game_id: str, uid: str, answer_value: str) -> None:
     r = session.get_redis_connection()
@@ -151,3 +131,28 @@ def advance_round(game_id: str) -> Dict[str, Any]:
     state["round_index"] += 1
     r.set(GAME_STATE.format(game_id=game_id), json.dumps(state))
     return state
+
+def lobby_screen(game_id: str):
+    r = session.get_redis_connection()
+    current_host = get_game_host_uid(game_id)
+    players = r.hgetall(GAME_PLAYERS.format(game_id=game_id))
+    if r.hget(GAME_KEY.format(game_id=game_id), "status") == "lobby":
+        st.write("## Players in Lobby")
+        for uid, pdata in players.items():
+            p = json.loads(pdata)
+            st.write(f"- {p['name']}")
+        if current_host == st.session_state.uid:
+            if st.button("Start Game"):
+                options_raw = r.hget(GAME_KEY.format(game_id=game_id), "options")
+                options = json.loads(options_raw)
+                initial_pool = options.get("initial_pool", [])
+                num_options = options.get("num_options", 4)
+                num_rounds = options.get("num_rounds", 5)
+                start_game(game_id, st.session_state.uid, initial_pool, num_options, num_rounds)
+                st.session_state.game_started = True
+                st.rerun()
+
+def get_game_host_uid(game_id: str) -> str:
+    r = session.get_redis_connection()
+    key = GAME_KEY.format(game_id=game_id)
+    return r.hget(key, "host")
