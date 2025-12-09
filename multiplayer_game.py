@@ -66,7 +66,6 @@ def join_game(game_id: str, uid: str, name: str) -> None:
     r.hset(GAME_PLAYERS.format(game_id=game_id), uid, json.dumps({"name": name, "score": 0}))
     session.push_event({"event": "player_joined_lobby", "game_id": game_id, "uid": uid, "name": name})
     st.session_state.auto_refresh = True
-    st.rerun()
 
 def start_game(game_id: str, host_uid: str, initial_pool: list, num_options:int, num_rounds:int) -> None:
     r = session.get_redis_connection()
@@ -151,6 +150,8 @@ def lobby_screen(game_id: str):
                 start_game(game_id, st.session_state.uid, initial_pool, num_options, num_rounds)
                 st.session_state.game_started = True
                 st.rerun()
+        else:
+            st.write("Waiting for Host")
 
 def get_game_host_uid(game_id: str) -> str:
     r = session.get_redis_connection()

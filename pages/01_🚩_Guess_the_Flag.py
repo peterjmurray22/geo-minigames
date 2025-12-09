@@ -12,13 +12,14 @@ game.conditional_autorefresh()
 # --- App ---
 st.title("🚩 Guess the Flag")
 r, uid, username = session.setup_multiplayer_session()
+session.heartbeat()
 
 game.init_game("Guess the Flag")
 
 # init global state
 if "countries" not in st.session_state:
     st.session_state.countries = game.load_countries()
-if "current_game_id" in st.session_state and mg.get_game_host_uid(st.session_state.current_game_id) == uid:
+if "current_game_id" in st.session_state:
     mg.lobby_screen(st.session_state.current_game_id)
 if "game_started" not in st.session_state or not st.session_state.game_started:
     game.setup_screen(st.session_state.countries)

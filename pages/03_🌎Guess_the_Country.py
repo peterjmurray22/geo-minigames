@@ -10,6 +10,7 @@ def show_country_question(round_data, multiple_choice=True):
 # --- App ---
 st.title("🌎️ Guess the Country")
 session.setup_multiplayer_session()
+session.heartbeat()
 
 game.init_game("Guess the Country")
 

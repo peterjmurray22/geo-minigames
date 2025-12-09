@@ -15,6 +15,7 @@ def show_capital_question(round_data, multiple_choice=True):
 # --- App ---
 st.title("🗺️ Guess the Capital")
 session.setup_multiplayer_session()
+session.heartbeat()
 
 game.init_game("Guess the Capital")
 
