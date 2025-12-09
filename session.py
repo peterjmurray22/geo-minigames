@@ -8,7 +8,7 @@ import json
 # config
 RECENT_EVENTS_KEY = "recent_events"
 RECENT_EVENTS_LIMIT = 10
-HEARTBEAT_TIMEOUT = 600  # seconds
+HEARTBEAT_TIMEOUT = 60 * 20  # seconds
 EVENT_TTL = 300  # seconds
 
 def push_event(event):
@@ -68,12 +68,14 @@ def heartbeat():
         if int(time.time()) - int(last_active) > HEARTBEAT_TIMEOUT:
             push_event({"event": "player_left", "uid": user_id, "name": r.hget(f"user:{user_id}", "name")})
             # Cleanup games hosted by user
-            for game_key in r.keys("game:*"):
-                if r.hget(game_key, "host") == user_id:
-                    r.delete(game_key)
-                    r.delete(f"{game_key}:players")
-                    r.delete(f"{game_key}:round")
-                    r.delete(f"{game_key}:answers")
+            for key in r.scan_iter("game:*"):
+                if key.count(":") == 1 and r.hget(key, "host") == user_id:
+                    print(f"Cleaning up game {key} hosted by inactive user {user_id}")
+                    r.delete(key)
+                    r.delete(f"{key}:players")
+                    r.delete(f"{key}:round")
+                    r.delete(f"{key}:answers")
+                    r.delete(f"{key}:state")
             r.delete(f"user:{user_id}")
             r.hdel("last_active", user_id)
 
