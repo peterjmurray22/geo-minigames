@@ -4,7 +4,7 @@ import pathlib
 import session
 
 def show_country_question(round_data, multiple_choice=True):
-    return game.show_image_question(round_data, pathlib.Path(__file__).resolve().parents[1] / "assets" / "silhouettes", "silhouette", "Which country is this?", multiple_choice)
+    return game.show_image_question(round_data, pathlib.Path(__file__).resolve().parents[1] / "assets" / "silhouettes", "silhouette", "Which country is this?", "name", multiple_choice)
 
 
 # --- App ---

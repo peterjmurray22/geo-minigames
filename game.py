@@ -126,9 +126,9 @@ def setup_screen(countries):
                 st.session_state.current_game_id = lobby["game_id"]
                 st.rerun()
 
-def show_image_question(round_data, image_dir, image_key, question_text, multiple_choice=True):
+def show_image_question(round_data, image_dir, image_key, question_text, answer_key="name", multiple_choice=True):
     answer = round_data["answer"]
-    st.session_state.correct = answer["name"]
+    st.session_state.correct = answer[answer_key]
     image_path = image_dir / answer[image_key]
     if not answer[image_key]:
         st.warning(f"No image specified for {answer['name']}")

@@ -1,16 +1,13 @@
 import streamlit as st
 import game
+import pathlib
 import session
+
 
 def show_capital_question(round_data, multiple_choice=True):
     answer = round_data["answer"]
     st.session_state.correct = answer["capital"]
-    if multiple_choice:
-        options = round_data["options"]
-        submitted = game.show_multiple_choice_options(f"What is the capital of **{answer['name']}**?", options)
-    else:
-        submitted = game.show_text_entry(f"What is the capital of **{answer['name']}**?")
-    return submitted
+    return game.show_image_question(round_data, pathlib.Path(__file__).resolve().parents[1] / "assets" / "silhouettes", "silhouette", f"What is the capital of **{answer['name']}**?", "capital", multiple_choice)
 
 # --- App ---
 st.title("🗺️ Guess the Capital")

@@ -5,7 +5,7 @@ import session
 import multiplayer_game as mg
 
 def show_flag_question(round_data, multiple_choice=True):
-    return game.show_image_question(round_data, pathlib.Path(__file__).resolve().parents[1] / "assets" / "flags", "flag_image", "Which country does this flag belong to?", multiple_choice)
+    return game.show_image_question(round_data, pathlib.Path(__file__).resolve().parents[1] / "assets" / "flags", "flag_image", "Which country does this flag belong to?", "name", multiple_choice)
 
 game.conditional_autorefresh()
 
