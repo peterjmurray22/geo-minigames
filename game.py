@@ -169,31 +169,39 @@ def submit_answer():
     else:
         st.session_state.submitted = st.session_state.text_entry
         st.session_state.text_entry = ""
+    mg.submit_answer(st.session_state.get("current_game_id", ""), st.session_state.uid, st.session_state.submitted)
 
 def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_question_fn, verify_distractors=True):
     if "round" not in st.session_state:
-        round_data, pool = generate_round(pool, key_field, distractor_key, num_options, verify_distractors, publish_to_game_id=st.session_state.get("current_game_id") if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) == st.session_state.uid else None)
+        if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) is not None and mg.get_game_host_uid(st.session_state.get("current_game_id", "")) != st.session_state.uid:
+            round_data = mg.pull_question_data(st.session_state.get("current_game_id", ""))
+        else:
+            round_data, pool = generate_round(pool, key_field, distractor_key, num_options, verify_distractors, publish_to_game_id=st.session_state.get("current_game_id") if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) == st.session_state.uid else None)
+            st.session_state.pool = pool
         st.session_state.round = round_data
-        st.session_state.pool = pool
 
     current = st.session_state.round
     submitted = show_question_fn(current, st.session_state.input == "Multiple Choice")
 
     if st.button("Submit", disabled=submitted is None or submitted == "" or st.session_state.rounds == num_rounds, on_click=submit_answer):
-        st.session_state.rounds += 1
-        if st.session_state.submitted.lower().strip() == st.session_state.correct.lower().strip():
-            st.session_state.score += 1
-            st.success("Correct! 🎉")
-        else:
-            st.error(f"Incorrect! The correct answer is **{st.session_state.correct}**.")
-
+        st.rerun()
+    
+    if "submitted" in st.session_state and st.session_state.submitted is not None:
+        check_correct_answer()
         update_score()
         if st.session_state.rounds < num_rounds and st.session_state.pool:
-            round_data, pool = generate_round(st.session_state.pool, key_field, distractor_key, num_options, verify_distractors, publish_to_game_id=st.session_state.get("current_game_id") if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) == st.session_state.uid else None)
+            if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) is not None and mg.get_game_host_uid(st.session_state.get("current_game_id", "")) != st.session_state.uid:
+                round_data = mg.pull_question_data(st.session_state.get("current_game_id", ""))
+            else:
+                round_data, pool = generate_round(pool, key_field, distractor_key, num_options, verify_distractors, publish_to_game_id=st.session_state.get("current_game_id") if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) == st.session_state.uid else None)
+                st.session_state.pool = pool
             st.session_state.round = round_data
-            st.session_state.pool = pool
         else:
             st.success(f"Game over! Final score: {st.session_state.score}/{st.session_state.rounds}")
+            if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) == st.session_state.uid:
+                mg.end_game(st.session_state.get("current_game_id", ""))
+            st.session_state.game_started = False
+            st.session_state.pop("current_game_id", None)
         time.sleep(3)
         st.rerun()
     
@@ -218,9 +226,25 @@ def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_ques
                 del st.session_state[key]
         st.rerun()
 
+def check_correct_answer():
+    while (not mg.check_all_answers_submitted(st.session_state.get("current_game_id", "")) and
+           mg.get_game_host_uid(st.session_state.get("current_game_id", "")) == st.session_state.uid) or (
+               mg.get_game_host_uid(st.session_state.get("current_game_id", "")) != st.session_state.uid and 
+               mg.pull_question_data(st.session_state.get("current_game_id", "")) == st.session_state.round and
+               mg.get_game_status(st.session_state.get("current_game_id", "")) != "finished"):
+        st.warning("Waiting for all players to submit their answers...")
+        st.rerun()
+    st.session_state.rounds += 1
+    if st.session_state.submitted.lower().strip() == st.session_state.correct.lower().strip():
+        st.session_state.score += 1
+        st.success("Correct! 🎉")
+    else:
+        st.error(f"Incorrect! The correct answer is **{st.session_state.correct}**.")
+    st.session_state.submitted = None
+
 def conditional_autorefresh():
     if "auto_refresh" not in st.session_state:
         st.session_state.auto_refresh = False
 
     if st.session_state.auto_refresh:
-        st_autorefresh(interval=1500, key="page_refresh")
+        st_autorefresh(interval=5000, key="page_refresh")
