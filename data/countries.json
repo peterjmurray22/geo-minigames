@@ -3387,8 +3387,7 @@
       "Belgium",
       "Libya",
       "Guinea",
-      "Algeria",
-      "Nigeria"
+      "Algeria"
     ],
     "capital_distractors": [
       "Lagos",
@@ -3711,7 +3710,7 @@
     "silhouette": "pitcairn_islands.png",
     "capital": "Adamstown",
     "flag_image": "pitcairn_islands.png",
-    "type": "nation",
+    "type": "territory",
     "flag_distractors": [
       "Falkland Islands",
       "Montserrat",
