@@ -173,7 +173,7 @@ def submit_answer():
 
 def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_question_fn, verify_distractors=True):
     if "round" not in st.session_state:
-        if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) != st.session_state.uid:
+        if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) is not None and mg.get_game_host_uid(st.session_state.get("current_game_id", "")) != st.session_state.uid:
             round_data = mg.pull_question_data(st.session_state.get("current_game_id", ""))
         else:
             round_data, pool = generate_round(pool, key_field, distractor_key, num_options, verify_distractors, publish_to_game_id=st.session_state.get("current_game_id") if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) == st.session_state.uid else None)
@@ -190,7 +190,7 @@ def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_ques
         check_correct_answer()
         update_score()
         if st.session_state.rounds < num_rounds and st.session_state.pool:
-            if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) != st.session_state.uid:
+            if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) is not None and mg.get_game_host_uid(st.session_state.get("current_game_id", "")) != st.session_state.uid:
                 round_data = mg.pull_question_data(st.session_state.get("current_game_id", ""))
             else:
                 round_data, pool = generate_round(pool, key_field, distractor_key, num_options, verify_distractors, publish_to_game_id=st.session_state.get("current_game_id") if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) == st.session_state.uid else None)
@@ -198,6 +198,10 @@ def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_ques
             st.session_state.round = round_data
         else:
             st.success(f"Game over! Final score: {st.session_state.score}/{st.session_state.rounds}")
+            if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) == st.session_state.uid:
+                mg.end_game(st.session_state.get("current_game_id", ""))
+            st.session_state.game_started = False
+            st.session_state.pop("current_game_id", None)
         time.sleep(3)
         st.rerun()
     
@@ -223,8 +227,11 @@ def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_ques
         st.rerun()
 
 def check_correct_answer():
-    while (not mg.check_all_answers_submitted(st.session_state.get("current_game_id", "")) 
-           and mg.get_game_host_uid(st.session_state.get("current_game_id", "")) == st.session_state.uid) or (mg.pull_question_data(st.session_state.get("current_game_id", "")) == st.session_state.round and mg.get_game_host_uid(st.session_state.get("current_game_id", "")) != st.session_state.uid):
+    while (not mg.check_all_answers_submitted(st.session_state.get("current_game_id", "")) and
+           mg.get_game_host_uid(st.session_state.get("current_game_id", "")) == st.session_state.uid) or (
+               mg.get_game_host_uid(st.session_state.get("current_game_id", "")) != st.session_state.uid and 
+               mg.pull_question_data(st.session_state.get("current_game_id", "")) == st.session_state.round and
+               mg.get_game_status(st.session_state.get("current_game_id", "")) != "finished"):
         st.warning("Waiting for all players to submit their answers...")
         st.rerun()
     st.session_state.rounds += 1

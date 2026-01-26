@@ -179,3 +179,13 @@ def check_all_answers_submitted(game_id: str) -> bool:
     answers = collect_answers(game_id)
     players = r.hgetall(GAME_PLAYERS.format(game_id=game_id))
     return len(answers) == len(players)
+
+def end_game(game_id: str) -> None:
+    r = session.get_redis_connection()
+    r.hset(GAME_KEY.format(game_id=game_id), "status", "finished")
+    r.delete(GAME_PLAYERS.format(game_id=game_id))
+    r.delete(GAME_ROUND.format(game_id=game_id))
+    r.delete(GAME_ANSWERS.format(game_id=game_id))
+    r.delete(GAME_STATE.format(game_id=game_id))
+    session.push_event({"event": "game_ended", "game_id": game_id})
+    st.session_state.game_started = False
