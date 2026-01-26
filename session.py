@@ -70,7 +70,6 @@ def heartbeat():
             # Cleanup games hosted by user
             for key in r.scan_iter("game:*"):
                 if key.count(":") == 1 and r.hget(key, "host") == user_id:
-                    print(f"Cleaning up game {key} hosted by inactive user {user_id}")
                     r.delete(key)
                     r.delete(f"{key}:players")
                     r.delete(f"{key}:round")

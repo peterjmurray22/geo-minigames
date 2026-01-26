@@ -20,6 +20,13 @@ game.init_game("Guess the Flag")
 if "countries" not in st.session_state:
     st.session_state.countries = game.load_countries()
 if "current_game_id" in st.session_state:
+    if mg.get_game_status(st.session_state.current_game_id) == "in_progress" and mg.get_game_host_uid(st.session_state.current_game_id) != uid:
+        options = mg.get_game_options(st.session_state.current_game_id)
+        st.session_state.game_started = True
+        st.session_state.pool = options.get("pool", [])
+        st.session_state.num_options = options["num_options"]
+        st.session_state.num_rounds = options["num_rounds"]
+        st.session_state.input = options["input"]
     mg.lobby_screen(st.session_state.current_game_id)
 if "game_started" not in st.session_state or not st.session_state.game_started:
     game.setup_screen(st.session_state.countries)

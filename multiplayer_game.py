@@ -157,3 +157,25 @@ def get_game_host_uid(game_id: str) -> str:
     r = session.get_redis_connection()
     key = GAME_KEY.format(game_id=game_id)
     return r.hget(key, "host")
+
+def pull_question_data(game_id: str) -> Dict[str, Any]:
+    r = session.get_redis_connection()
+    round_raw = r.get(GAME_ROUND.format(game_id=game_id))
+    if not round_raw:
+        return None
+    return json.loads(round_raw)
+
+def get_game_status(game_id: str) -> str:
+    r = session.get_redis_connection()
+    key = GAME_KEY.format(game_id=game_id)
+    return r.hget(key, "status")
+
+def get_game_options(game_id: str) -> Dict[str, Any]:
+    r = session.get_redis_connection()
+    return json.loads(r.hget(GAME_KEY.format(game_id=game_id), "options"))
+
+def check_all_answers_submitted(game_id: str) -> bool:
+    r = session.get_redis_connection()
+    answers = collect_answers(game_id)
+    players = r.hgetall(GAME_PLAYERS.format(game_id=game_id))
+    return len(answers) == len(players)
