@@ -24,30 +24,37 @@ def generate_round(pool, key_field: str, distractor_key: str, num_options: int =
     remaining = [c for c in pool if c != answer and c[key_field] != ""]
 
     if st.session_state.input == "Text Entry":
+        if publish_to_game_id:
+            mg.publish_round(publish_to_game_id, {
+                "answer": answer,
+                "options": [],
+                "key_field": key_field,
+            })
         return {
             "answer": answer,
             "options": [],
             "key_field": key_field,
         }, remaining
-
-    # sample distractors
-    distractor_list = answer[distractor_key]
-    distractors = []
-    options = []
-    if verify_distractors:
-        distractors = [d for d in remaining if d[key_field] in distractor_list]
-        distractors = random.sample(distractors, k=min(num_options - 1, len(distractors)))
-        if len(distractors) < min(num_options - 1, len(remaining)):
-            extend_list = [a for a in remaining if a not in distractors and a["name"] != answer["name"]]
-            distractors.extend(random.sample(extend_list, k=(min(num_options - 1, len(remaining)) - len(distractors))))
-        options = [d[key_field] for d in distractors] + [answer[key_field]]
     else:
-        distractors = distractor_list
-        distractors = random.sample(distractors, k=min(num_options - 1, len(distractors)))
-        if len(distractors) < min(num_options - 1, len(remaining)):
-            extend_list = [a[key_field] for a in remaining if a[key_field] not in distractors and a["name"] != answer["name"]]
-            distractors.extend(random.sample(extend_list, k=(min(num_options - 1, len(remaining)) - len(distractors))))
-        options = distractors + [answer[key_field]]
+        # sample distractors
+        distractor_list = answer[distractor_key]
+        distractors = []
+        options = []
+        if verify_distractors:
+            distractors = [d for d in remaining if d[key_field] in distractor_list]
+            distractors = random.sample(distractors, k=min(num_options - 1, len(distractors)))
+            if len(distractors) < min(num_options - 1, len(remaining)):
+                extend_list = [a for a in remaining if a not in distractors and a["name"] != answer["name"]]
+                distractors.extend(random.sample(extend_list, k=(min(num_options - 1, len(remaining)) - len(distractors))))
+            options = [d[key_field] for d in distractors] + [answer[key_field]]
+        else:
+            distractors = distractor_list
+            distractors = random.sample(distractors, k=min(num_options - 1, len(distractors)))
+            if len(distractors) < min(num_options - 1, len(remaining)):
+                extend_list = [a[key_field] for a in remaining if a[key_field] not in distractors and a["name"] != answer["name"]]
+                distractors.extend(random.sample(extend_list, k=(min(num_options - 1, len(remaining)) - len(distractors))))
+            options = distractors + [answer[key_field]]
+    
     if publish_to_game_id:
         mg.publish_round(publish_to_game_id, {
             "answer": answer,
