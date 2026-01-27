@@ -134,6 +134,8 @@ def setup_screen(countries):
                 st.rerun()
 
 def show_image_question(round_data, image_dir, image_key, question_text, answer_key="name", multiple_choice=True):
+    if round_data is None:
+        st.rerun()
     answer = round_data["answer"]
     st.session_state.correct = answer[answer_key]
     image_path = image_dir / answer[image_key]
