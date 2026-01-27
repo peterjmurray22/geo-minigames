@@ -248,6 +248,7 @@ def check_correct_answer():
     else:
         st.error(f"Incorrect! The correct answer is **{st.session_state.correct}**.")
     st.session_state.submitted = None
+    st.session_state.round = None
 
 def conditional_autorefresh():
     if "auto_refresh" not in st.session_state:
