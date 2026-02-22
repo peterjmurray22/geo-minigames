@@ -8,7 +8,7 @@ import json
 # config
 RECENT_EVENTS_KEY = "recent_events"
 RECENT_EVENTS_LIMIT = 10
-HEARTBEAT_TIMEOUT = 60 * 20  # seconds
+HEARTBEAT_TIMEOUT = 60 * 60 * 2  # seconds
 EVENT_TTL = 300  # seconds
 
 def push_event(event):
