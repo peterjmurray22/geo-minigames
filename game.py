@@ -181,7 +181,7 @@ def submit_answer():
     mg.submit_answer(st.session_state.get("current_game_id", ""), st.session_state.uid, st.session_state.submitted)
 
 def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_question_fn, verify_distractors=True):
-    if "round" not in st.session_state:
+    if "round" not in st.session_state or st.session_state.round is None:
         if mg.get_game_host_uid(st.session_state.get("current_game_id", "")) is not None and mg.get_game_host_uid(st.session_state.get("current_game_id", "")) != st.session_state.uid:
             round_data = mg.pull_question_data(st.session_state.get("current_game_id", ""))
         else:
