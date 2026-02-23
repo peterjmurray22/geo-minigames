@@ -214,7 +214,7 @@ def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_ques
         time.sleep(3)
         st.rerun()
     
-    if st.button("Reset Game"):
+    if st.button("Reset Game", disabled=mg.get_game_host_uid(st.session_state.get("current_game_id", "")) is not None and mg.get_game_host_uid(st.session_state.get("current_game_id", "")) != st.session_state.uid):
         keys_to_clear = [
             "game_started",
             "pool",
