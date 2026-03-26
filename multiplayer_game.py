@@ -49,7 +49,7 @@ def list_lobbies() -> List[Dict[str, Any]]:
             continue
         seen.add(game_id)
         status = r.hget(key, "status")
-        if status == "lobby":
+        if status == "lobby" or status == "in_progress":
             options = json.loads(r.hget(key, "options") or "{}")
             game_mode = r.hget(key, "game_mode")
             host_uid = r.hget(key, "host")

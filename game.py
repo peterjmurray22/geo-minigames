@@ -237,7 +237,8 @@ def run_game(pool, num_options, num_rounds, key_field, distractor_key, show_ques
 
 def check_correct_answer():
     while (not mg.check_all_answers_submitted(st.session_state.get("current_game_id", "")) and
-           mg.get_game_host_uid(st.session_state.get("current_game_id", "")) == st.session_state.uid) or (
+           mg.get_game_host_uid(st.session_state.get("current_game_id", "")) == st.session_state.uid and
+           not st.button("Proceed")) or (
                mg.get_game_host_uid(st.session_state.get("current_game_id", "")) != st.session_state.uid and 
                mg.pull_question_data(st.session_state.get("current_game_id", "")) == st.session_state.round and
                mg.get_game_status(st.session_state.get("current_game_id", "")) != "finished"):
