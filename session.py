@@ -5,6 +5,9 @@ import os
 import time
 import json
 
+from redis.retry import Retry
+from redis.backoff import ConstantBackoff
+
 # config
 RECENT_EVENTS_KEY = "recent_events"
 RECENT_EVENTS_LIMIT = 10
@@ -32,6 +35,7 @@ def get_redis_connection():
         port=int(cfg["REDIS_PORT"]),
         password=cfg.get("REDIS_PASSWORD", ""),
         decode_responses=True,
+        retry=redis.retry.Retry(ConstantBackoff(2), 3),
     )
 
 def prompt_username():
