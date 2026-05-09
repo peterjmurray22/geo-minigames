@@ -136,10 +136,39 @@ def lobby_screen(game_id: str):
     current_host = get_game_host_uid(game_id)
     players = r.hgetall(GAME_PLAYERS.format(game_id=game_id))
     if r.hget(GAME_KEY.format(game_id=game_id), "status") == "lobby":
-        st.write("## Players in Lobby")
+        st.markdown("""
+        <div style="
+            background: linear-gradient(135deg, #FFFFFF 0%, #FCE4EC 50%, #FFFFFF 100%);
+            padding: 2.5rem;
+            border-radius: 25px;
+            border: 4px solid #EC407A;
+            margin: 2rem 0;
+            box-shadow: 0 8px 25px rgba(236, 64, 122, 0.3);
+        ">
+            <h2 style="color: #C2185B !important; text-align: center; margin-bottom: 2rem !important; font-size: 2.2rem !important; font-weight: 700 !important; text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">🎮 Players in Lobby</h2>
+        """, unsafe_allow_html=True)
+
         for uid, pdata in players.items():
             p = json.loads(pdata)
-            st.write(f"- {p['name']}")
+            is_host = "👑 " if uid == current_host else ""
+            st.markdown(f"""
+            <div style="
+                background: linear-gradient(135deg, #FFFFFF 0%, #E8F5E9 100%);
+                padding: 1.25rem 2rem;
+                margin: 0.75rem 0;
+                border-radius: 15px;
+                border: 3px solid #4CAF50;
+                box-shadow: 0 4px 15px rgba(76, 175, 80, 0.2);
+                color: #2E7D32;
+                font-weight: 700;
+                font-size: 1.1rem;
+                text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+            ">
+                {is_host}{p['name']}
+            </div>
+            """, unsafe_allow_html=True)
+
+        st.markdown("</div>", unsafe_allow_html=True)
         if current_host == st.session_state.uid:
             if st.button("Start Game"):
                 options_raw = r.hget(GAME_KEY.format(game_id=game_id), "options")
@@ -151,7 +180,23 @@ def lobby_screen(game_id: str):
                 st.session_state.game_started = True
                 st.rerun()
         else:
-            st.write("Waiting for Host")
+            st.markdown("""
+            <div style="
+                background: linear-gradient(135deg, #FFA726 0%, #FFB74D 100%);
+                padding: 1.5rem;
+                border-radius: 20px;
+                text-align: center;
+                color: white;
+                font-weight: 700;
+                font-size: 1.2rem;
+                margin: 1.5rem 0;
+                border: 3px solid white;
+                box-shadow: 0 6px 20px rgba(255, 167, 38, 0.4);
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            ">
+                ⏳ Waiting for host to start the game...
+            </div>
+            """, unsafe_allow_html=True)
 
 def get_game_host_uid(game_id: str) -> str:
     r = session.get_redis_connection()
@@ -189,3 +234,19 @@ def end_game(game_id: str) -> None:
     r.delete(GAME_STATE.format(game_id=game_id))
     session.push_event({"event": "game_ended", "game_id": game_id})
     st.session_state.game_started = False
+
+def get_leaderboard(game_id: str) -> List[Dict[str, Any]]:
+    """Get sorted leaderboard of players with their scores."""
+    r = session.get_redis_connection()
+    players = r.hgetall(GAME_PLAYERS.format(game_id=game_id))
+    leaderboard = []
+    for uid, pdata in players.items():
+        p = json.loads(pdata)
+        leaderboard.append({
+            "name": p["name"],
+            "score": p.get("score", 0),
+            "uid": uid
+        })
+    # Sort by score descending
+    leaderboard.sort(key=lambda x: x["score"], reverse=True)
+    return leaderboard
