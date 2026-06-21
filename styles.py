@@ -22,20 +22,20 @@ def apply_geography_theme():
     }
 
     h1 {
-        font-size: 2rem !important;
-        margin-bottom: 1.5rem !important;
+        font-size: 1.75rem !important; /* lowered from 2rem */
+        margin-bottom: 1.25rem !important;
         border-bottom: 2px solid #e5e7eb;
-        padding-bottom: 0.75rem;
+        padding-bottom: 0.5rem;
     }
 
     h2 {
-        font-size: 1.5rem !important;
+        font-size: 1.25rem !important; /* slightly smaller */
         color: #374151 !important;
-        margin-top: 1.5rem !important;
+        margin-top: 1rem !important;
     }
 
     h3 {
-        font-size: 1.25rem !important;
+        font-size: 1.1rem !important;
         color: #4b5563 !important;
     }
 
@@ -65,19 +65,26 @@ def apply_geography_theme():
         color: #059669 !important;
     }
 
-    /* Buttons - clean and simple */
+    /* Buttons - clean and simple. Ensure clickable area, reasonable size */
     .stButton > button {
         background: #059669 !important;
         color: white !important;
         border: none !important;
         border-radius: 8px !important;
-        padding: 0.625rem 1.25rem !important;
-        font-size: 0.95rem !important;
+        padding: 0.5rem 1rem !important; /* slightly smaller */
+        min-width: 120px !important; /* consistent clickable area */
+        font-size: 0.9rem !important;
         font-weight: 600 !important;
         font-family: 'Inter', sans-serif !important;
         box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
-        transition: all 0.2s ease !important;
-        cursor: pointer;
+        transition: all 0.15s ease !important;
+        cursor: pointer !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        line-height: 1 !important;
+        pointer-events: auto !important;
+        z-index: 10 !important;
     }
 
     .stButton > button:hover {
@@ -96,28 +103,29 @@ def apply_geography_theme():
         box-shadow: none !important;
     }
 
-    /* Radio buttons - minimal style */
+    /* Radio buttons - minimal style, ensure label is clickable */
     .stRadio > label {
         color: #374151 !important;
         font-weight: 600 !important;
         font-size: 0.95rem !important;
         text-shadow: none;
+        cursor: pointer !important;
     }
 
     .stRadio > div {
         background: white;
-        padding: 1rem;
+        padding: 0.75rem;
         border-radius: 8px;
         border: 1px solid #e5e7eb;
     }
 
     .stRadio [role="radiogroup"] label {
         background: white;
-        padding: 0.75rem 1rem;
+        padding: 0.6rem 0.9rem;
         border-radius: 6px;
         margin: 0.25rem;
         border: 1px solid #d1d5db;
-        transition: all 0.2s ease;
+        transition: all 0.15s ease;
         cursor: pointer;
         font-weight: 500;
         color: #374151 !important;
@@ -140,6 +148,7 @@ def apply_geography_theme():
         color: #374151 !important;
         font-weight: 600 !important;
         font-size: 0.95rem !important;
+        cursor: pointer !important;
     }
 
     .stCheckbox > div {
@@ -166,7 +175,7 @@ def apply_geography_theme():
     .stTextInput > div > div > input {
         border: 1px solid #d1d5db !important;
         border-radius: 8px !important;
-        padding: 0.625rem 0.875rem !important;
+        padding: 0.5rem 0.75rem !important;
         font-size: 0.95rem !important;
         background: white !important;
         color: #1f2937 !important;
@@ -175,12 +184,12 @@ def apply_geography_theme():
 
     .stTextInput > div > div > input:focus {
         border-color: #059669 !important;
-        box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1) !important;
+        box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.08) !important;
     }
 
     /* Metrics */
     [data-testid="stMetricValue"] {
-        font-size: 2rem !important;
+        font-size: 1.6rem !important; /* reduced */
         color: #1f2937 !important;
         font-weight: 700 !important;
         font-family: 'Inter', sans-serif;
@@ -190,14 +199,14 @@ def apply_geography_theme():
     [data-testid="stMetricLabel"] {
         color: #6b7280 !important;
         font-weight: 600 !important;
-        font-size: 0.875rem !important;
+        font-size: 0.8rem !important;
         text-transform: uppercase;
         letter-spacing: 0.05em;
     }
 
     div[data-testid="metric-container"] {
         background: white;
-        padding: 1.5rem;
+        padding: 1rem;
         border-radius: 8px;
         border: 1px solid #e5e7eb;
         box-shadow: 0 1px 3px rgba(0,0,0,0.05);
@@ -206,7 +215,7 @@ def apply_geography_theme():
     /* Containers */
     div[data-testid="stVerticalBlock"] > div[data-testid="stVerticalBlock"] {
         background: white;
-        padding: 1rem;
+        padding: 0.8rem;
         border-radius: 8px;
         border: 1px solid #e5e7eb;
     }
@@ -224,9 +233,9 @@ def apply_geography_theme():
         background: #ecfdf5 !important;
         color: #065f46 !important;
         border-radius: 8px !important;
-        padding: 1rem !important;
+        padding: 0.9rem !important;
         font-weight: 500 !important;
-        font-size: 0.95rem !important;
+        font-size: 0.9rem !important;
         border-left: 4px solid #059669 !important;
     }
 
@@ -234,9 +243,9 @@ def apply_geography_theme():
         background: #fef2f2 !important;
         color: #991b1b !important;
         border-radius: 8px !important;
-        padding: 1rem !important;
+        padding: 0.9rem !important;
         font-weight: 500 !important;
-        font-size: 0.95rem !important;
+        font-size: 0.9rem !important;
         border-left: 4px solid #dc2626 !important;
     }
 
@@ -244,16 +253,16 @@ def apply_geography_theme():
         background: #fffbeb !important;
         color: #92400e !important;
         border-radius: 8px !important;
-        padding: 1rem !important;
+        padding: 0.9rem !important;
         font-weight: 500 !important;
-        font-size: 0.95rem !important;
+        font-size: 0.9rem !important;
         border-left: 4px solid #f59e0b !important;
     }
 
     /* Columns */
     [data-testid="column"] {
         background: white;
-        padding: 1rem;
+        padding: 0.9rem;
         border-radius: 8px;
         border: 1px solid #e5e7eb;
     }
@@ -266,13 +275,13 @@ def apply_geography_theme():
 
     .stMarkdown ul li {
         background: white;
-        padding: 0.875rem 1rem;
-        margin: 0.5rem 0;
+        padding: 0.75rem 0.9rem;
+        margin: 0.4rem 0;
         border-radius: 6px;
         border: 1px solid #e5e7eb;
         font-weight: 500;
         color: #374151;
-        transition: all 0.2s ease;
+        transition: all 0.15s ease;
     }
 
     .stMarkdown ul li:hover {
@@ -307,9 +316,116 @@ def apply_geography_theme():
     """, unsafe_allow_html=True)
 
 
+def apply_birthday_theme():
+    """Apply a cheerful birthday theme with pastel colors and smaller UI elements."""
+    st.markdown("""
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    .stApp {
+        background: linear-gradient(135deg, #FFF1F8 0%, #FFF8E7 50%, #F0FFF4 100%);
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background-attachment: fixed;
+    }
+
+    h1, h2, h3 {
+        font-family: 'Inter', sans-serif;
+        color: #0f172a !important;
+        font-weight: 700 !important;
+        text-shadow: none;
+    }
+
+    h1 { font-size: 1.6rem !important; margin-bottom: 1rem !important; }
+    h2 { font-size: 1.15rem !important; color: #334155 !important; }
+    h3 { font-size: 1.0rem !important; color: #475569 !important; }
+
+    /* Fun header accent with balloons */
+    .stTitle {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    /* Buttons - birthday colors, friendly and easy to click */
+    .stButton > button {
+        background: linear-gradient(90deg, #FF8BA7 0%, #FFD6A5 100%) !important;
+        color: #0f172a !important;
+        border: none !important;
+        border-radius: 12px !important;
+        padding: 0.5rem 0.95rem !important;
+        min-width: 110px !important;
+        font-size: 0.9rem !important;
+        font-weight: 700 !important;
+        box-shadow: 0 4px 12px rgba(255,139,167,0.12) !important;
+        transition: transform 0.12s ease, box-shadow 0.12s ease !important;
+        cursor: pointer !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        pointer-events: auto !important;
+        z-index: 10 !important;
+    }
+
+    .stButton > button:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(255,139,167,0.14) !important; }
+
+    .stButton > button:disabled { background: #f3e8ff !important; color: #9ca3af !important; }
+
+    /* Reduce large emoji/icon sizes in cards */
+    .emoji-large { font-size: 1.5rem !important; }
+
+    /* Ensure inputs and labels are compact and clickable */
+    .stTextInput > div > div > input { padding: 0.45rem 0.7rem !important; font-size: 0.95rem !important; }
+    .stRadio [role="radiogroup"] label { padding: 0.5rem 0.8rem !important; }
+
+    /* Cards */
+    .card-small {
+        padding: 0.9rem !important;
+        border-radius: 10px !important;
+        border: 1px solid rgba(15,23,42,0.06) !important;
+        background: rgba(255,255,255,0.9) !important;
+    }
+
+    /* Confetti accent (subtle) */
+    .confetti {
+        background-image: radial-gradient(circle at 10% 20%, rgba(255,203,164,0.6) 2px, transparent 3px),
+                          radial-gradient(circle at 80% 30%, rgba(255,133,133,0.5) 2px, transparent 3px),
+                          radial-gradient(circle at 40% 80%, rgba(167,139,250,0.45) 2px, transparent 3px);
+        background-size: 120px 120px, 140px 140px, 100px 100px;
+        background-repeat: repeat;
+        opacity: 0.12;
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    /* Make sure metric sizes are not excessive */
+    [data-testid="stMetricValue"] { font-size: 1.4rem !important; }
+
+    /* Ensure columns/cards use smaller padding */
+    [data-testid="column"] { padding: 0.8rem !important; }
+
+    </style>
+    """, unsafe_allow_html=True)
+
+
 def add_geography_header(title, icon="🌍"):
     """Add a simple, clean header"""
     st.title(f"{icon} {title}")
+
+
+def add_birthday_header(title, icon="🎉"):
+    """Add a birthday-style header (uses smaller icon size class)"""
+    # Small inline header with confetti background
+    st.markdown(f"""
+    <div style="position: relative;">
+      <div class="confetti"></div>
+      <div style="position: relative; z-index: 1; display:flex; align-items:center; gap:0.5rem;">
+        <div style="font-size:1.2rem">{icon}</div>
+        <h1 style="margin:0;">{title}</h1>
+      </div>
+    </div>
+    """, unsafe_allow_html=True)
 
 
 def add_score_card(score_text):
@@ -317,12 +433,12 @@ def add_score_card(score_text):
     st.markdown(f"""
     <div style="
         background: white;
-        padding: 1.5rem;
+        padding: 1.0rem;
         border-radius: 8px;
         text-align: center;
         border: 1px solid #e5e7eb;
         box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        margin: 1rem 0;
+        margin: 0.75rem 0;
     ">
         <div style="
             color: #6b7280;
@@ -330,11 +446,11 @@ def add_score_card(score_text):
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
         ">Score</div>
         <div style="
             color: #1f2937;
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-weight: 700;
             font-family: 'Inter', sans-serif;
         ">{score_text}</div>
@@ -345,18 +461,13 @@ def add_score_card(score_text):
 def add_lobby_card(game_id, host_name, num_players=1):
     """Add a clean lobby card"""
     st.markdown(f"""
-    <div style="
-        background: white;
-        padding: 1rem;
-        border-radius: 8px;
-        border: 1px solid #e5e7eb;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        margin: 0.75rem 0;
+    <div class="card-small" style="
+        margin: 0.5rem 0;
     ">
-        <div style="color: #1f2937; margin: 0 0 0.5rem 0; font-size: 1rem; font-weight: 600;">
+        <div style="color: #1f2937; margin: 0 0 0.35rem 0; font-size: 0.95rem; font-weight: 600;">
             🎮 {host_name}'s Game
         </div>
-        <div style="color: #6b7280; font-size: 0.875rem; font-weight: 400;">
+        <div style="color: #6b7280; font-size: 0.85rem; font-weight: 400;">
             <strong>ID:</strong> {game_id} · <strong>Players:</strong> {num_players}
         </div>
     </div>
@@ -367,8 +478,8 @@ def add_geography_footer():
     """Add a clean footer"""
     st.markdown("""
     <div style="
-        margin-top: 3rem;
-        padding: 2rem;
+        margin-top: 2rem;
+        padding: 1.25rem;
         text-align: center;
         color: #9ca3af;
         font-size: 0.875rem;
@@ -384,18 +495,18 @@ def show_leaderboard(leaderboard, current_uid=None):
     st.markdown("""
     <div style="
         background: white;
-        padding: 1.5rem;
+        padding: 1rem;
         border-radius: 8px;
         border: 1px solid #e5e7eb;
         box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        margin: 1rem 0;
+        margin: 0.75rem 0;
     ">
         <div style="
             color: #1f2937;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 700;
-            margin-bottom: 1rem;
-            padding-bottom: 0.75rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
             border-bottom: 2px solid #e5e7eb;
         ">🏆 Leaderboard</div>
     """, unsafe_allow_html=True)
@@ -418,8 +529,8 @@ def show_leaderboard(leaderboard, current_uid=None):
         st.markdown(f"""
         <div style="
             background: {bg_color};
-            padding: 0.75rem 1rem;
-            margin: 0.5rem 0;
+            padding: 0.6rem 0.9rem;
+            margin: 0.4rem 0;
             border-radius: 6px;
             border: 1px solid {border_color};
             display: flex;
@@ -429,7 +540,7 @@ def show_leaderboard(leaderboard, current_uid=None):
             <div style="color: #374151; font-weight: {font_weight};">
                 {medal}<span style="color: #9ca3af; margin-right: 0.5rem;">#{rank}</span>{player['name']}
             </div>
-            <div style="color: #059669; font-weight: 700; font-size: 1.1rem;">
+            <div style="color: #059669; font-weight: 700; font-size: 1.05rem;">
                 {player['score']}
             </div>
         </div>
