@@ -7,7 +7,7 @@ st.set_page_config(page_title="Geo Games", page_icon="🌍", layout="wide")
 session.setup_multiplayer_session()
 
 # Apply custom geography theme
-styles.apply_geography_theme()
+styles.apply_birthday_theme()
 
 # Add custom header
 styles.add_geography_header("Geo Games", "🌍")
